@@ -40,6 +40,8 @@ include "../Algemeen/navigation menu.html";
         Wij wensen u veel plezier en enthousiasme op onze webwinkel!</p>
     <div class="slide"><img src="../Img/nerdy gadgets.jpg" alt="Slide 1"></div>
 
+    <!-- plaats info.html hier -->
+
     <footer>
         <div class="social">
             <a href="..."> <ion-icon name="logo-instagram"></ion-icon> </a>
