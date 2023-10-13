@@ -1,22 +1,16 @@
-.logo {
-    height: 28%;
-    width: 28%;
-    display: grid;
-    align-items: center;
-    margin: 2%;
-}
-
-.de legend {
-
-}
-
 head {
     background-color: #C0C0C0;
     text-align: center;
     padding: 5%;
 }
 
-
+.logo {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    align-items: center;
+    margin: 50px;
+}
 
 body {
     background-color: #545161 ;
