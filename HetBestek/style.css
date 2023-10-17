@@ -1,5 +1,5 @@
 head {
-    background-color: #C0C0C0;
+    background-color: #808080;
     text-align: center;
     padding: 5%;
 }
@@ -13,8 +13,8 @@ head {
 }
 
 body {
-    background-color: #545161 ;
-    color: white;
+    background-color: #C0C0C0 ;
+    color: black;
 }
 
 ion-icon {
@@ -91,5 +91,5 @@ footer > .copyright {
 }
 
 footer {
-    background-color: #C0C0C0;
+    background-color: #808080;
 }
