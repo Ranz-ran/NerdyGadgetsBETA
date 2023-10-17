@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #C0C0C0;
+    background: #808080;
 }
 
 .menu {
@@ -47,7 +47,7 @@
 }
 
 .menu .navigation span ion-icon {
-    color: #fff;
+    color: #10131c;
     font-size: 0.25rem;
     transition: 0.5s;
 }
@@ -65,7 +65,7 @@
 .menu .navigation.active span {
     width: 45px;
     height: 45px;
-    background: #1f2536;
+    background: #ffffff;
     transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
 }
 
@@ -87,7 +87,7 @@
     pointer-events: initial;
     transition-delay: 0.8s;
     background: yellow;
-    color: #fff;
+    color: white;
 }
 
 .menu .navigation ~ .close ion-icon {

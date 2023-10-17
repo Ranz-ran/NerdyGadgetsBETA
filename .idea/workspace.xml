@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="Kleuren aangepast." />
+    <list default="true" id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="Kleuren aangepast.">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/NerdyGadgetsBETA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HetBestek/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HetBestek/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algemeen/Hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/Algemeen/Hamburgers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HetBestek/Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HetBestek/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HetBestek/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,28 +31,28 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2WhVUOEw8fKIsOvnoRFWomM70NN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +62,10 @@
       <option name="presentableId" value="Default" />
       <updated>1697184813403</updated>
       <workItem from="1697184814490" duration="1417000" />
+      <workItem from="1697188012529" duration="589000" />
+      <workItem from="1697188616850" duration="125000" />
+      <workItem from="1697191920666" duration="365000" />
+      <workItem from="1697525924787" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="Kleuren aangepast.">
       <option name="closed" value="true" />
@@ -68,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697185467538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Kleuren aangepast.">
+      <option name="closed" value="true" />
+      <created>1697188140924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697188140924</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

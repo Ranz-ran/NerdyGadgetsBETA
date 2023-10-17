@@ -3,23 +3,27 @@
     width: 28%;
     display: grid;
     align-items: center;
-    margin: 2%;
+    margin: 3%;
 }
 
 .de legend {
 
 }
 
-head {
-    background-color: #C0C0C0;
+.header {
+    height: 100%;
+    width: 100%;
+    background-color: #808080;
     text-align: center;
-    padding: 5%;
+    padding: 50px;
+
+
 }
 
 
 
 body {
-    background-color: #545161 ;
+    background-color: #F0FFF0 ;
     color: white;
 }
 
@@ -97,5 +101,5 @@ footer > .copyright {
 }
 
 footer {
-    background-color: #C0C0C0;
+    background-color: #808080;
 }
