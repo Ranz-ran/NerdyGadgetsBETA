@@ -38,9 +38,23 @@ include "./header.php";
   <title>Nerdy Gadgets</title>
 </head>
 <body>
-  <div class="foto"><img src="../Img/nerdy gadgets.jpg" alt="Gadget Afbeelding"></div>
+  <div class="foto"><img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding"></div>
+  <div class="hoofd-info">
+    <h2>TITLE</h2>
+    <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+  </div>
   <div class="omschrijving">
-    <p></p>
+    <p>Lorem ipsum dolor sit amet. Et nobis amet ea distinctio dicta et ducimus saepe.
+      Et dolorum voluptate et iste commodi ut explicabo galisum ab nulla dolores et
+      accusamus aliquam est perferendis asperiores. Aut tempora autem ut eius dicta
+      sit velit dicta qui fugit laborum.</p>
+  </div>
+  <div class="aankoop">
+    <span class="prijs"> € 0,00 </span>
+    <div class="koop-nu"> In Winkelwagen </div>
+  </div>
+  <div class="resenties">
+    <?php include "./.html" ?>
   </div>
 
 </body>

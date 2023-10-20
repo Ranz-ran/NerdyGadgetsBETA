@@ -1,0 +1,92 @@
+<?php
+include "./header.php";
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- responsive code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- external links -->
+  <link rel="stylesheet" href="style.css">
+  <title>Nerdy Gadgets</title>
+</head>
+<body>
+    <!-- de komende <a> tags zijn placeholders -->
+    <a href="product.php">
+        <div class="gadget">
+            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
+            <div class="details">
+                <p>TITLE</p>
+                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>€0,00</p>
+            </div>
+        </div>
+    </a>
+    <a href="product.php">
+        <div class="gadget">
+            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
+            <div class="details">
+                <p>TITLE</p>
+                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>€0,00</p>
+            </div>
+        </div>
+    </a>
+    <a href="product.php">
+        <div class="gadget">
+            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
+            <div class="details">
+                <p>TITLE</p>
+                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>€0,00</p>
+            </div>
+        </div>
+    </a>
+    <a href="product.php">
+        <div class="gadget">
+            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
+            <div class="details">
+                <p>TITLE</p>
+                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>€0,00</p>
+            </div>
+        </div>
+    </a>
+
+  <?php
+//   include("connection.php");
+
+//   //verkrijg alle producten van de database
+//   //$stmt = $pdo->query("");
+//   $gadgets = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//   // zolang er producten zijn, print de product gegevens
+//   if (count($gadgets) > 0) {
+//     foreach ($gadgets as $gadget) {
+//       $gadgetId = $gadget['id'];
+//       print('<a href="product.php?gadget_id=' . $gadgetId . '">');
+//       print('<div class="gadget">');
+//       print('<img src="" alt="">');
+//       print('<div class="details">');
+//       print('<p>' . $gadget['naam'] .'</p>');
+//       print('<p>' . $gadget['resentie'] . '</p>');
+//       print('<p>' . $gadget['prijs'] . '</p>');
+//       print('</div>');
+//       print('</div>');
+//       print('</a>');
+//     }
+//   } 
+//   // als er geen producten beschikbaar zijn (door bijvoorbeeld een error), geef een error message
+//   else {
+//     print('<div class="display-details">');
+//     print('<p class="error message">Er zijn op dit moment geen NerdyGadgets™ beschikbaar</p>');
+//     print('</div>');
+//   }
+  ?>
+
+</body>
+<?php include "./footer.php" ?>
+</html>
