@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="Kleuren aangepast.">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/NerdyGadgetsBETA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HetBestek/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HetBestek/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="2b2ba134-63d5-46d6-b0c1-c8b6f7db1ecc" name="Changes" comment="Kleuren aangepast.">
+      <change afterPath="$PROJECT_DIR$/Andere/filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Andere/filter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algemeen/Hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/Algemeen/Hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HetBestek/Index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HetBestek/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HetBestek/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,74 +17,68 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2WhVUOEw8fKIsOvnoRFWomM70NN" />
+  <component name="ProjectId" id="2X154VVqvIHc8xilIEujaFRUWV9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ritak/PhpstormProjects/ip_les&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="" />
-      <created>1697184813403</created>
+      <changelist id="2b2ba134-63d5-46d6-b0c1-c8b6f7db1ecc" name="Changes" comment="Kleuren aangepast." />
+      <created>1697783560926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697184813403</updated>
-      <workItem from="1697184814490" duration="1417000" />
-      <workItem from="1697188012529" duration="589000" />
-      <workItem from="1697188616850" duration="125000" />
-      <workItem from="1697191920666" duration="365000" />
-      <workItem from="1697525924787" duration="681000" />
+      <updated>1697783560926</updated>
+      <workItem from="1697783567690" duration="4268000" />
+      <workItem from="1697794369640" duration="733000" />
+      <workItem from="1698748348429" duration="651000" />
+      <workItem from="1698762956412" duration="1486000" />
+      <workItem from="1698996326033" duration="437000" />
     </task>
-    <task id="LOCAL-00001" summary="Kleuren aangepast.">
-      <option name="closed" value="true" />
-      <created>1697185250683</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697185250683</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Kleuren aangepast.">
-      <option name="closed" value="true" />
-      <created>1697185467538</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1697185467538</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Kleuren aangepast.">
-      <option name="closed" value="true" />
-      <created>1697188140924</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1697188140924</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
