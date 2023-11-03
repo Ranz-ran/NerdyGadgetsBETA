@@ -1,6 +1,6 @@
 <?php
 include "./header.php";
-
+//include "./legend.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +21,7 @@ include "./header.php";
             <div class="details">
                 <p>TITLE</p>
                 <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>CATAGORY</p>
                 <p>€0,00</p>
             </div>
         </div>
@@ -31,6 +32,7 @@ include "./header.php";
             <div class="details">
                 <p>TITLE</p>
                 <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>CATAGORY</p>
                 <p>€0,00</p>
             </div>
         </div>
@@ -41,6 +43,7 @@ include "./header.php";
             <div class="details">
                 <p>TITLE</p>
                 <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>CATAGORY</p>
                 <p>€0,00</p>
             </div>
         </div>
@@ -51,6 +54,7 @@ include "./header.php";
             <div class="details">
                 <p>TITLE</p>
                 <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                <p>CATAGORY</p>
                 <p>€0,00</p>
             </div>
         </div>
@@ -60,7 +64,8 @@ include "./header.php";
 //   include("connection.php");
 
 //   //verkrijg alle producten van de database
-//   //$stmt = $pdo->query("");
+//   //$stmt = $pdo->query("SELECT *
+//                          FROM Product");
 //   $gadgets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 //   // zolang er producten zijn, print de product gegevens
@@ -69,11 +74,13 @@ include "./header.php";
 //       $gadgetId = $gadget['id'];
 //       print('<a href="product.php?gadget_id=' . $gadgetId . '">');
 //       print('<div class="gadget">');
-//       print('<img src="" alt="">');
+//       print('<img src="$gadget['image']" alt="">');
 //       print('<div class="details">');
-//       print('<p>' . $gadget['naam'] .'</p>');
+//       print('<p>' . $gadget['name'] .'</p>');
+//       print('<p>' . $gadget['description'] .'</p>');
 //       print('<p>' . $gadget['resentie'] . '</p>');
-//       print('<p>' . $gadget['prijs'] . '</p>');
+//       print('<p>' . $gadget['catagory'] . '</p>');
+//       print('<p>' . $gadget['price'] . '</p>');
 //       print('</div>');
 //       print('</div>');
 //       print('</a>');
@@ -81,7 +88,7 @@ include "./header.php";
 //   } 
 //   // als er geen producten beschikbaar zijn (door bijvoorbeeld een error), geef een error message
 //   else {
-//     print('<div class="display-details">');
+//     print('<div class="error-details">');
 //     print('<p class="error message">Er zijn op dit moment geen NerdyGadgets™ beschikbaar</p>');
 //     print('</div>');
 //   }

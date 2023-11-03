@@ -1,5 +1,6 @@
 <?php
 include "../Algemeen/navigation menu.html";
+// include "connection.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
