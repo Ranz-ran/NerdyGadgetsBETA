@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .container {
-    width: 15%;
-    min-height: 15%;
+    width: 0%;
+    height: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #808080;
+    background: white;
 }
 
 .menu {
@@ -20,6 +21,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(90%, 20%);
+    transform: translate(90%, 20%);
 }
 
 .menu .navigation {
@@ -40,14 +45,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: black;
     transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
     transition: transform 0.5s, width 0.5s, height 0.5s;
     transition-delay: calc(0.1s * var(--i));
 }
 
 .menu .navigation span ion-icon {
-    color: #10131c;
+    color: white;
     font-size: 0.25rem;
     transition: 0.5s;
 }
@@ -65,7 +70,7 @@
 .menu .navigation.active span {
     width: 45px;
     height: 45px;
-    background: #ffffff;
+    background: black;
     transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
 }
 
@@ -76,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: black;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -87,11 +92,11 @@
     pointer-events: initial;
     transition-delay: 0.8s;
     background: yellow;
-    color: white;
+    color: black;
 }
 
 .menu .navigation ~ .close ion-icon {
-    color: #10131c;
+    color: white;
     font-size: 2.5rem;
     scale: 0;
     transition: 1s;
