@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="update header logo en nav zitten er goed in.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HetBestek/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/style.css" afterDir="false" />
+    <list default="true" id="af04b05a-8feb-459b-8371-c565cc645fea" name="Changes" comment="update header logo en nav zitten er goed in. Part 2">
+      <change beforePath="$PROJECT_DIR$/HetBestek/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698997463348</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update header logo en nav zitten er goed in. Part 2">
+      <option name="closed" value="true" />
+      <created>1698999456455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698999456455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kleuren aangepast." />
     <MESSAGE value="update header logo en nav zitten er goed in." />
-    <option name="LAST_COMMIT_MESSAGE" value="update header logo en nav zitten er goed in." />
+    <MESSAGE value="update header logo en nav zitten er goed in. Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update header logo en nav zitten er goed in. Part 2" />
   </component>
 </project>

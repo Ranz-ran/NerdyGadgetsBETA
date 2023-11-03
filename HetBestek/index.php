@@ -1,6 +1,3 @@
-<?php
-include "../Algemeen/navigation menu.html";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
