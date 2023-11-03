@@ -1,7 +1,3 @@
-<?php
-include "../Algemeen/navigation menu.html";
-// include "connection.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +14,15 @@ include "../Algemeen/navigation menu.html";
 
 
 </head>
-
+<div class="header">
+    <?php
+    include "../Algemeen/navigation menu.html";
+    ?>
 <div class="logo">
     <a href="#">
         <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
     </a>
-</div>
+</div></div>
 <body>
     <!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
     <div class="slogan">
