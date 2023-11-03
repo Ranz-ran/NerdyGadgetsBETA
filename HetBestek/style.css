@@ -13,8 +13,8 @@
     margin: 0 auto;
     top:50%;
     left:50%;
-    -ms-transform: translate(-2%, -20%);
-    transform: translate(-2%, -20%);
+    -ms-transform: translate(-2%, -20%);/*verplaatsen logo*/
+    transform: translate(-2%, -20%);/*verplaatsen logo*/
 }
 
 
