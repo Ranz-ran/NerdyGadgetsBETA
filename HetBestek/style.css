@@ -21,6 +21,7 @@
 body {
     background-color: #C0C0C0 ;
     color: black;
+    border-width: 5px ;
 }
 
 ion-icon {
@@ -65,10 +66,8 @@ footer > .social > a > * {
 footer ul {
     display: flex;
     justify-content: center;
-
     padding: 0;
     margin-bottom: 0;
-
     text-align: center;
     font-size: 18px;
     list-style: none;
