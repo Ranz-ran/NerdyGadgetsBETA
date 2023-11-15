@@ -1,39 +1,39 @@
 <?php
-include "./header.php";
-// include("connection.php");
-// include "./legend.php";
+include("./header.php");
+include("connection.php");
+// include("./legend.php");
 
 // Verkrijg een gadget Id van de URL
-// if (isset($_GET['gadget_id'])) {
-//   $gadgetId = $_GET['gadget_id'];
-// } else {
-  // als die er niet is, redirect user
-//   header("location: index.php");
-//   exit;
-//}
+if (isset($_GET['gadget_id'])) {
+  $gadgetId = $_GET['gadget_id'];
+} else {
+  //als die er niet is, redirect user
+  header("location: index.php");
+  exit;
+}
 
-// Verkrijg de juiste gadget met deze query
-// $stmt = $pdo->prepare("SELECT *
-// FROM Product
-// WHERE id = ?");
-// $stmt->execute([$gadgetId]);
-// $gadget = $stmt->fetch(PDO::FETCH_ASSOC);
+//Verkrijg de juiste gadget met deze query
+$stmt = $pdo->prepare("SELECT name, description, price, catagory, image
+FROM Product
+WHERE id = ?");
+$stmt->execute([$gadgetId]);
+$gadget = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
-// Als er geen gadget is om te tonen, redirect de gebruiker naar de geselecteerde pagina
-// if (!$gadget) {
-//   header("location: overzicht.php");
-//   exit;
-// }
+//Als er geen gadget is om te tonen, redirect de gebruiker naar de geselecteerde pagina
+if (!$gadget) {
+  header("location: overzicht.php");
+  exit;
+}
 
-// Check of de koop nu knop is ingedrukt, zo ja? voeg toe aan winkelwagen
-// if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
-//   $gadgetCartId = $gadgetId;
-//   $gadgetCartNaam = $gadget['name']; 
-//   $gadgetCartId = $gadget['price'];
+//Check of de koop nu knop is ingedrukt, zo ja? voeg toe aan winkelwagen
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
+  $gadgetCartId = $gadgetId;
+  $gadgetCartNaam = $gadget['name']; 
+  $gadgetCartId = $gadget['price'];
 
-//   addToCart($gadgetCartId, $gadgetCartNaam, $gadgetCartId);
-// }
+  addToCart($gadgetCartId, $gadgetCartNaam, $gadgetCartId);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,28 +47,29 @@ include "./header.php";
   <title>Nerdy Gadgets</title>
 </head>
 <body>
-  <div class="foto"><img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding"></div>
+  <div class="foto">
+    <?php
+      print("<img src='".$gadget["image"]."' alt='Gadget Afbeelding'>");
+    ?>
+  </div>
   <div class="hoofd-info">
-    <h2>TITLE</h2>
-    <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+   <?php print("<h2>".$gadget["name"]."</h2>"); ?>
   </div>
   <div class="omschrijving">
-    <p>Lorem ipsum dolor sit amet. Et nobis amet ea distinctio dicta et ducimus saepe.
-      Et dolorum voluptate et iste commodi ut explicabo galisum ab nulla dolores et
-      accusamus aliquam est perferendis asperiores. Aut tempora autem ut eius dicta
-      sit velit dicta qui fugit laborum.</p>
+    <?php print("<p>".$gadget["description"]."</p>"); ?>
   </div>
   <div class="aankoop">
-    <span class="prijs"> € 0,00 </span>
+    <?php print("<span class='prijs'> € ".$gadget["price"]." </span>"); ?>
+    
     <form method="post">
         <input type="hidden" name="in_winkelwagen" value="1">
         <button type="submit" class="koop-nu"> In Winkelwagen </button>
     </form>
   </div>
   <div class="resenties">
-    <?php include "./.html" ?>
+    <?php include("./.html") ?>
   </div>
 
 </body>
-<?php include "./footer.php" ?>
+<?php include("./footer.php") ?>
 </html>

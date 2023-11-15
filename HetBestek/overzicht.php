@@ -1,5 +1,5 @@
 <?php
-include "./header.php";
+include("./header.php");
 //include "./legend.php";
 ?>
 <!DOCTYPE html>
@@ -14,86 +14,41 @@ include "./header.php";
   <title>Nerdy Gadgets</title>
 </head>
 <body>
-    <!-- de komende <a> tags zijn placeholders -->
-    <a href="product.php">
-        <div class="gadget">
-            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
-            <div class="details">
-                <p>TITLE</p>
-                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
-                <p>CATAGORY</p>
-                <p>€0,00</p>
-            </div>
-        </div>
-    </a>
-    <a href="product.php">
-        <div class="gadget">
-            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
-            <div class="details">
-                <p>TITLE</p>
-                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
-                <p>CATAGORY</p>
-                <p>€0,00</p>
-            </div>
-        </div>
-    </a>
-    <a href="product.php">
-        <div class="gadget">
-            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
-            <div class="details">
-                <p>TITLE</p>
-                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
-                <p>CATAGORY</p>
-                <p>€0,00</p>
-            </div>
-        </div>
-    </a>
-    <a href="product.php">
-        <div class="gadget">
-            <img src="../Img/product_images/Intel Core i7.jpg" alt="Gadget Afbeelding">
-            <div class="details">
-                <p>TITLE</p>
-                <p>&#11088; &#11088; &#11088; &#11088; &#11088;</p>
-                <p>CATAGORY</p>
-                <p>€0,00</p>
-            </div>
-        </div>
-    </a>
 
   <?php
-//   include("connection.php");
+  include("connection.php");
 
-//   //verkrijg alle producten van de database
-//   //$stmt = $pdo->query("SELECT *
-//                          FROM Product");
-//   $gadgets = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  //verkrijg alle producten van de database
+  $stmt = $pdo->query("SELECT *
+                        FROM Product");
+  $gadgets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-//   // zolang er producten zijn, print de product gegevens
-//   if (count($gadgets) > 0) {
-//     foreach ($gadgets as $gadget) {
-//       $gadgetId = $gadget['id'];
-//       print('<a href="product.php?gadget_id=' . $gadgetId . '">');
-//       print('<div class="gadget">');
-//       print('<img src="$gadget['image']" alt="">');
-//       print('<div class="details">');
-//       print('<p>' . $gadget['name'] .'</p>');
-//       print('<p>' . $gadget['description'] .'</p>');
-//       print('<p>' . $gadget['resentie'] . '</p>');
-//       print('<p>' . $gadget['catagory'] . '</p>');
-//       print('<p>' . $gadget['price'] . '</p>');
-//       print('</div>');
-//       print('</div>');
-//       print('</a>');
-//     }
-//   } 
-//   // als er geen producten beschikbaar zijn (door bijvoorbeeld een error), geef een error message
-//   else {
-//     print('<div class="error-details">');
-//     print('<p class="error message">Er zijn op dit moment geen NerdyGadgets™ beschikbaar</p>');
-//     print('</div>');
-//   }
+  // zolang er producten zijn, print de product gegevens
+  if (count($gadgets) > 0) {
+    foreach ($gadgets as $gadget) {
+      $gadgetId = $gadget['id'];
+      print('<a href="product.php?gadget_id=' . $gadgetId . '">');
+      print('<div class="gadget">');
+      print('<img src="$gadget["image"]" alt="">');
+      print('<div class="details">');
+      print('<p>'.$gadget['name'].'</p>');
+      print('<p>'.$gadget['description'].'</p>');
+      print('<p>'.$gadget['resentie'].'</p>');
+      print('<p>'.$gadget['catagory'].'</p>');
+      print('<p>'.$gadget['price'].'</p>');
+      print('</div>');
+      print('</div>');
+      print('</a>');
+    }
+  } 
+  // als er geen producten beschikbaar zijn (door bijvoorbeeld een error), geef een error message
+  else {
+    print('<div class="error-details">');
+    print('<p class="error message">Er zijn op dit moment geen NerdyGadgets™ beschikbaar</p>');
+    print('</div>');
+  }
   ?>
 
 </body>
-<?php include "./footer.php" ?>
+<?php include("./footer.php") ?>
 </html>

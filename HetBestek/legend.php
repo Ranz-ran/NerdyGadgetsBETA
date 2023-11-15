@@ -1,5 +1,5 @@
 <?php
-
+// dit is de winkelwagen
 session_start();
 //include("connection.php");
 
