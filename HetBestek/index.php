@@ -8,7 +8,6 @@
     <!-- external links -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
-    <link rel="stylesheet" href="../header/header.css">
     <title>Nerdy Gadgets</title>
 
         <!-- het logo -->
@@ -17,45 +16,31 @@
 </head>
 <div class="header">
     <?php
-    include "../header/header.html";
+    include "../Algemeen/navigation menu.html";
     ?>
-    <?php
-    include "../Algemeen/navigation menu.html"
-    ?>
-
-<!--<div class="logo">
+<div class="logo">
     <a href="#">
         <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
     </a>
-</div>-->
-</div>
+</div></div>
 <body>
     <!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
     <div class="slogan">
     <h3>The gadgets that improve your modern day life. </h3>
     </div>
-
-
-    <?php
-    include "../Andere/filter.html";
-    ?>
-
     <!-- aanbevolen producten slider -->
     <div class="aanbevolen">
         <div class="slides">
             <?php include "./Carousel.html" ?>
         </div>
     </div>
-
-
     <p>Wij de makers van Nerdy Gadgets willen ervoor zorgen dat het leven makkelijker wordt gemaakt voor onze klanten.
         Niet alleen het makkelijk maken van iemands leven vinden wij belangrijk,
         maar ook de mensen met hobby’s en interesses die door onze Gadgets enthousiast worden.
         Wij wensen u veel plezier en enthousiasme op onze webwinkel!</p>
     <div class="slide"><img src="../Img/nerdy gadgets.jpg" alt="Slide 1"></div>
 
-
-
+    <!-- plaats info.html hier -->
 
     <footer>
         <div class="social">
@@ -73,7 +58,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 
 </body>
 </html>
