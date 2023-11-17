@@ -8,6 +8,7 @@
     <!-- external links -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
+    <link rel="stylesheet" href="../header/header.css">
     <title>Nerdy Gadgets</title>
 
         <!-- het logo -->
@@ -16,13 +17,17 @@
 </head>
 <div class="header">
     <?php
-    include "../Algemeen/navigation menu.html";
+    include "../header/header.html";
     ?>
-<div class="logo">
+    <?php
+    include "../Algemeen/navigation menu.html"
+    ?>
+
+<!--<div class="logo">
     <a href="#">
         <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
     </a>
-</div>
+</div>-->
 </div>
 <body>
     <!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
