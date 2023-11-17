@@ -17,10 +17,7 @@
 </head>
 <div class="header">
     <?php
-    include "../header/header.html";
-    ?>
-    <?php
-    include "../Algemeen/navigation menu.html"
+    include "../header/header.php";
     ?>
 
 <!--<div class="logo">

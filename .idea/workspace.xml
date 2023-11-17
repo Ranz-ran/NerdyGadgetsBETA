@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2ba134-63d5-46d6-b0c1-c8b6f7db1ecc" name="Changes" comment="Poging tot header apart.">
+    <list default="true" id="2b2ba134-63d5-46d6-b0c1-c8b6f7db1ecc" name="Changes" comment="homepage problematiek :(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algemeen/Hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/Algemeen/Hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algemeen/navigation menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Algemeen/navigation menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HetBestek/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HetBestek/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +80,7 @@
       <workItem from="1700040481854" duration="808000" />
       <workItem from="1700044697702" duration="114000" />
       <workItem from="1700047863014" duration="8410000" />
+      <workItem from="1700209929711" duration="1137000" />
     </task>
     <task id="LOCAL-00001" summary="Poging tot header apart.">
       <option name="closed" value="true" />
@@ -92,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699874675013</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="homepage problematiek :(">
+      <option name="closed" value="true" />
+      <created>1700210224051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700210224051</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kleuren aangepast." />
     <MESSAGE value="Poging tot header apart." />
-    <option name="LAST_COMMIT_MESSAGE" value="Poging tot header apart." />
+    <MESSAGE value="homepage problematiek :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage problematiek :(" />
   </component>
 </project>
