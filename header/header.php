@@ -5,7 +5,6 @@
     <title>Title</title>
 
     <link rel="stylesheet" href="header.css">
-
     <header>
         <?php include
         "../Algemeen/navigation menu.html"
