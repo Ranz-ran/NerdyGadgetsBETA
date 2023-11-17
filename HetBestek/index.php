@@ -40,9 +40,12 @@
     <!-- aanbevolen producten slider -->
     <div class="aanbevolen">
         <div class="slides">
-            <?php include "./Carousel.html" ?>
+            <?php
+            include "Carousel.html";
+            ?>
         </div>
     </div>
+
 
 
     <p>Wij de makers van Nerdy Gadgets willen ervoor zorgen dat het leven makkelijker wordt gemaakt voor onze klanten.
