@@ -54,6 +54,9 @@ include "Carousel.html";
     Wij wensen u veel plezier en enthousiasme op onze webwinkel!</p>
 <div class="slide"><img src="../Img/nerdy gadgets.jpg" alt="Slide 1"></div>
 
+<?php
+include "../Info/info.html";
+?>
 
 <footer>
     <div class="social">
