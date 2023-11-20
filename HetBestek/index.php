@@ -26,6 +26,7 @@
         </a>
     </div>-->
 </div>
+
 <body>
 <!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
 <div class="slogan">
@@ -41,6 +42,10 @@
         ?>
     </div>
 </div>
+
+<?php
+include "Carousel.html";
+?>
 
 
 <p>Wij de makers van Nerdy Gadgets willen ervoor zorgen dat het leven makkelijker wordt gemaakt voor onze klanten.
