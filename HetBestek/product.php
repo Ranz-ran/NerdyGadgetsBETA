@@ -1,7 +1,7 @@
 <?php
-include("./header.php");
-include("connection.php");
-// include("./legend.php");
+include("../header.php");
+include("../Database/connection.php");
+include("../legend.php");
 
 // Verkrijg een gadget Id van de URL
 if (isset($_GET['gadget_id'])) {

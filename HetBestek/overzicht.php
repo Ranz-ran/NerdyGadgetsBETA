@@ -16,7 +16,7 @@ include("./header.php");
 <body>
 
   <?php
-  include("connection.php");
+  include("../Database/connection.php");
 
   //verkrijg alle producten van de database
   $stmt = $pdo->query("SELECT *
