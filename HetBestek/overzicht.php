@@ -10,13 +10,14 @@
 
   <!-- external links -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="productstyle.css">
   <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
 <div class="header">
     <?php
-    //include("../header/header.php");
+    include("../header/header.php");
     ?>
 </div>
 <body>

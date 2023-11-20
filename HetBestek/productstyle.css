@@ -1,0 +1,19 @@
+/* Add this to your style.css file */
+  
+  .gadget {
+    width: 23%; /* Set the width to 23% to allow for some margin */
+    margin: 1%; /* Add a small margin between gadgets */
+    box-sizing: border-box;
+  }
+  
+  /* Add additional styling as needed */
+  .details {
+    /* Your existing styles for the details */
+  }
+  
+  /* Adjust styling for smaller screens if necessary */
+  @media (max-width: 768px) {
+    .gadget {
+      width: 48%; /* Two gadgets per row on smaller screens */
+    }
+  } 
