@@ -13,9 +13,9 @@
         <div class="logo">
             <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
         </div>
-       <!-- <?php
+       <?php
         include "../Andere/filter.html"
-        ?>-->
+        ?>
     </header>
 </head>
 
