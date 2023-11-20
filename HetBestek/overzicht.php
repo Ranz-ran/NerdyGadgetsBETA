@@ -1,5 +1,4 @@
 <?php
-include("./header.php");
 //include "./legend.php";
 ?>
 <!DOCTYPE html>
@@ -11,8 +10,15 @@ include("./header.php");
 
   <!-- external links -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
+  <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
+<div class="header">
+    <?php
+    //include("../header/header.php");
+    ?>
+</div>
 <body>
 
   <?php
@@ -33,7 +39,7 @@ include("./header.php");
       print('<div class="details">');
       print('<p>'.$gadget['name'].'</p>');
       print('<p>'.$gadget['description'].'</p>');
-      print('<p>'.$gadget['resentie'].'</p>');
+      // print('<p>'.$gadget['resentie'].'</p>');
       print('<p>'.$gadget['catagory'].'</p>');
       print('<p>'.$gadget['price'].'</p>');
       print('</div>');
@@ -49,6 +55,27 @@ include("./header.php");
   }
   ?>
 
+<footer>
+    <div class="social">
+        <a href="...">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="...">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="...">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <p class="copyright">J-STAR ©2023</p>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-<?php include("./footer.php") ?>
 </html>

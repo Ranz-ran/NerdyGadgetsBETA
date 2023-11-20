@@ -1,5 +1,4 @@
 <?php
-include("../header.php");
 include("../Database/connection.php");
 include("../legend.php");
 
@@ -44,8 +43,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
 
   <!-- external links -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
+  <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
+<div class="header">
+    <?php
+    include("../header/header.php");
+    ?>
+</div>
 <body>
   <div class="foto">
     <?php
@@ -70,6 +76,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
     <?php include("./.html") ?>
   </div>
 
+  <footer>
+    <div class="social">
+        <a href="...">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="...">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="...">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <p class="copyright">J-STAR ©2023</p>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-<?php include("./footer.php") ?>
 </html>
