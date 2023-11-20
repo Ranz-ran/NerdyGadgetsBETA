@@ -40,7 +40,7 @@
       print('<p>'.$gadget['name'].'</p>');
       print('<p>'.$gadget['description'].'</p>');
       // print('<p>'.$gadget['resentie'].'</p>');
-      print('<p>'.$gadget['catagory'].'</p>');
+      print('<p>'.$gadget['category'].'</p>');
       print('<p>'.$gadget['price'].'</p>');
       print('</div>');
       print('</div>');
