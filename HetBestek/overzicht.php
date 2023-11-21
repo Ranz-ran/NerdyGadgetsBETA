@@ -1,6 +1,3 @@
-<?php
-//include "./legend.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +12,13 @@
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
-<div class="header">
-    <?php
-    include("../header/header.php");
-    ?>
-</div>
 <body>
+
+  <div class="header">
+    <?php
+    // include("../header/header.php");
+    ?>
+  </div>
 
   <?php
   include("../Database/connection.php");
@@ -34,9 +32,9 @@
   if (count($gadgets) > 0) {
     foreach ($gadgets as $gadget) {
       $gadgetId = $gadget['id'];
-      print('<a href="product.php?gadget_id=' . $gadgetId . '">');
+      print('<a class="gadget-box" href="product.php?gadget_id=' . $gadgetId . '">');
       print('<div class="gadget">');
-      print('<img src="$gadget["image"]" alt="">');
+      print('<img src="../Img/product_images/'.$gadget["image"].'" alt="">');
       print('<div class="details">');
       print('<p>'.$gadget['name'].'</p>');
       print('<p>'.$gadget['description'].'</p>');
@@ -47,6 +45,8 @@
       print('</div>');
       print('</a>');
     }
+
+
   } 
   // als er geen producten beschikbaar zijn (door bijvoorbeeld een error), geef een error message
   else {
@@ -56,7 +56,7 @@
   }
   ?>
 
-<footer>
+  <footer>
     <div class="social">
         <a href="...">
             <ion-icon name="logo-instagram"></ion-icon>
@@ -73,10 +73,10 @@
         <li><a href="#about">About</a></li>
     </ul>
     <p class="copyright">J-STAR ©2023</p>
-</footer>
+  </footer>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 include("../Database/connection.php");
-include("../legend.php");
+// include("../legend.php");
 
 // Verkrijg een gadget Id van de URL
 if (isset($_GET['gadget_id'])) {
@@ -47,12 +47,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
-<div class="header">
+
+<body>
+  <div class="header">
     <?php
     include("../header/header.php");
     ?>
-</div>
-<body>
+  </div>
+
   <div class="foto">
     <?php
       print("<img src='".$gadget["image"]."' alt='Gadget Afbeelding'>");
