@@ -1,7 +1,7 @@
 <?php
-
+// dit is de winkelwagen
 session_start();
-//include("connection.php");
+include("../Database/connection.php");
 
 // Functie in winkelwagen doen
 function addToCart($productId, $aantal) {

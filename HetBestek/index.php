@@ -17,7 +17,7 @@
 </head>
 <div class="header">
     <?php
-    include "../header/header.php";
+    include("../header/header.php");
     ?>
 
     <!--<div class="logo">
@@ -26,6 +26,7 @@
         </a>
     </div>-->
 </div>
+
 <body>
 <!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
 <div class="slogan">
@@ -42,6 +43,10 @@
     </div>
 </div>
 
+<?php
+include "Carousel.html";
+?>
+
 
 <p>Wij de makers van Nerdy Gadgets willen ervoor zorgen dat het leven makkelijker wordt gemaakt voor onze klanten.
     Niet alleen het makkelijk maken van iemands leven vinden wij belangrijk,
@@ -49,6 +54,9 @@
     Wij wensen u veel plezier en enthousiasme op onze webwinkel!</p>
 <div class="slide"><img src="../Img/nerdy gadgets.jpg" alt="Slide 1"></div>
 
+<?php
+include "../Info/info.html";
+?>
 
 <footer>
     <div class="social">

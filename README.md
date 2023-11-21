@@ -2,7 +2,7 @@
 Our project
 
 ## Description
-...
+Onze website is een webshop waar je computer onderdelen kan vinden.
 
 ## Getting Started
 ...
