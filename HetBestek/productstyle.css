@@ -18,6 +18,58 @@
   display: block;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.foto {
+  flex: 1;
+  text-align: center;
+}
+
+.foto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hoofd-info h2 {
+  color: #333;
+}
+
+.omschrijving p {
+  color: #666;
+}
+
+.aankoop {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.koop-nu {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #90c26d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.koop-nu:hover {
+  background-color: #39ff14;
+}
+
 @media (max-width: 768px) {
   .gadget-box {
     width: 48%;
