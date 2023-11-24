@@ -1,6 +1,6 @@
 <?php
 include("../Database/connection.php");
-include("../legend.php");
+// include("../legend.php");
 
 // Verkrijg een gadget Id van de URL
 if (isset($_GET['gadget_id'])) {
@@ -12,7 +12,7 @@ if (isset($_GET['gadget_id'])) {
 }
 
 //Verkrijg de juiste gadget met deze query
-$stmt = $pdo->prepare("SELECT name, description, price, catagory, image
+$stmt = $pdo->prepare("SELECT name, description, price, category, image
 FROM Product
 WHERE id = ?");
 $stmt->execute([$gadgetId]);
@@ -20,10 +20,10 @@ $gadget = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 //Als er geen gadget is om te tonen, redirect de gebruiker naar de geselecteerde pagina
-if (!$gadget) {
-  header("location: overzicht.php");
-  exit;
-}
+// if (!$gadget) {
+//   header("location: overzicht.php");
+//   exit;
+// }
 
 //Check of de koop nu knop is ingedrukt, zo ja? voeg toe aan winkelwagen
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
@@ -43,19 +43,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
 
   <!-- external links -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="productstyle.css">
   <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
 </head>
-<div class="header">
-    <?php
-    include("../header/header.php");
-    ?>
-</div>
+
 <body>
+  <div class="header">
+    <?php
+    //include("../header/header.php");
+    ?>
+  </div>
+
   <div class="foto">
     <?php
-      print("<img src='".$gadget["image"]."' alt='Gadget Afbeelding'>");
+      print("<img src='../Img/product_images/".$gadget["image"]."' alt='Gadget Afbeelding'>");
     ?>
   </div>
   <div class="hoofd-info">
@@ -73,7 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
     </form>
   </div>
   <div class="resenties">
-    <?php include("./.html") ?>
+    <?php 
+    //include("./.html") 
+    ?>
   </div>
 
   <footer>
