@@ -20,10 +20,10 @@ $gadget = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 //Als er geen gadget is om te tonen, redirect de gebruiker naar de geselecteerde pagina
-// if (!$gadget) {
-//   header("location: overzicht.php");
-//   exit;
-// }
+if (!$gadget) {
+  header("location: overzicht.php");
+  exit;
+}
 
 //Check of de koop nu knop is ingedrukt, zo ja? voeg toe aan winkelwagen
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
@@ -61,24 +61,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
       print("<img src='../Img/product_images/".$gadget["image"]."' alt='Gadget Afbeelding'>");
     ?>
   </div>
-  <div class="hoofd-info">
-   <?php print("<h2>".$gadget["name"]."</h2>"); ?>
-  </div>
-  <div class="omschrijving">
-    <?php print("<p>".$gadget["description"]."</p>"); ?>
-  </div>
-  <div class="aankoop">
-    <?php print("<span class='prijs'> € ".$gadget["price"]." </span>"); ?>
+  <div class="all-info">
+    <div class="hoofd-info">
+      <?php print("<h2>".$gadget["name"]."</h2>"); ?>
+    </div>
+    <div class="omschrijving">
+      <?php print("<p>".$gadget["description"]."</p>"); ?>
+    </div>
+    <div class="aankoop">
+      <?php print("<span class='prijs'> € ".$gadget["price"]." </span>"); ?>
     
-    <form method="post">
+      <form method="post">
         <input type="hidden" name="in_winkelwagen" value="1">
         <button type="submit" class="koop-nu"> In Winkelwagen </button>
-    </form>
-  </div>
-  <div class="resenties">
-    <?php 
-    //include("./.html") 
-    ?>
+      </form>
+    </div>
+    <div class="resenties">
+      <?php 
+        //include("./.html") 
+      ?>
+    </div>
   </div>
 
   <footer>
