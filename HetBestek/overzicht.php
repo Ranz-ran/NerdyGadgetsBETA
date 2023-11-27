@@ -34,7 +34,7 @@
       $gadgetId = $gadget['id'];
       print('<a class="gadget-box" href="product.php?gadget_id=' . $gadgetId . '">');
       print('<div class="gadget">');
-      print('<img src="../Img/product_images/'.$gadget["image"].'" alt="Gadget Afbeelding">');
+      print('<img src="../Img/product_images/'.$gadget["image"].'.jpg" alt="Gadget Afbeelding">');
       print('<div class="details">');
       print('<p>'.$gadget['name'].'</p>');
 
