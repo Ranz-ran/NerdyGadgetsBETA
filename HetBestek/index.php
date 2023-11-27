@@ -20,11 +20,6 @@
     include("../header/header.php");
     ?>
 
-    <!--<div class="logo">
-        <a href="#">
-            <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
-        </a>
-    </div>-->
 </div>
 
 <body>

@@ -2,6 +2,8 @@ body {
     background-color: #C0C0C0 ;
     color: black;
     border-width: 5px ;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .aanbevolen{
