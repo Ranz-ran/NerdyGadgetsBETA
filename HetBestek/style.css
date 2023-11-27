@@ -45,6 +45,7 @@ footer > .social > a {
     color: inherit;
     opacity: 0.75;
 }
+
 footer > .social > a:hover {
     opacity: 0.9;
 }

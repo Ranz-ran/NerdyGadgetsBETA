@@ -7,7 +7,7 @@
 
   <!-- external links -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="productstyle.css">
+  <link rel="stylesheet" href="overzichtstyle.css">
   <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
@@ -34,10 +34,13 @@
       $gadgetId = $gadget['id'];
       print('<a class="gadget-box" href="product.php?gadget_id=' . $gadgetId . '">');
       print('<div class="gadget">');
-      print('<img src="../Img/product_images/'.$gadget["image"].'" alt="">');
+      print('<img src="../Img/product_images/'.$gadget["image"].'" alt="Gadget Afbeelding">');
       print('<div class="details">');
       print('<p>'.$gadget['name'].'</p>');
-      print('<p>'.$gadget['description'].'</p>');
+
+      $limitedDescription = substr($gadget['description'], 0, 100);
+      print('<p>'.$limitedDescription.'...</p>');
+
       // print('<p>'.$gadget['resentie'].'</p>');
       print('<p>'.$gadget['category'].'</p>');
       print('<p>'.$gadget['price'].'</p>');
