@@ -1,21 +1,14 @@
 .gadget-box {
-  width: 25%;
+  width: 100%;
   box-sizing: border-box;
   display: inline-block;
   text-decoration: none;
   padding: 15px;
-  box-sizing: border-box;
 }
 
 .gadget {
   width: 100%;
   box-sizing: border-box;
-}
-
-.gadget img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .container {
@@ -30,6 +23,7 @@
   flex: 1;
   text-align: center;
   float: left;
+  max-width: 40%;
 }
 
 .foto img {
@@ -41,6 +35,7 @@
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  max-width: 60%;
 }
 
 .hoofd-info h2 {
@@ -58,7 +53,7 @@
 
 .koop-nu {
   display: block;
-  width: 100%;
+  width: 20%;
   padding: 10px;
   font-size: 1.2em;
   background-color: #90c26d;
@@ -73,6 +68,10 @@
 
 @media (max-width: 768px) {
   .gadget-box {
-    width: 48%;
+    width: 100%;
+  }
+  .foto,
+  .info {
+    max-width: 100%;
   }
 }
