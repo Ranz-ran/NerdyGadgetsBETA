@@ -1,29 +1,10 @@
-.gadget-box {
-  width: 100%;
-  box-sizing: border-box;
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px;
-}
-
-.gadget {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 20px auto;
-}
-
 .foto {
   flex: 1;
   text-align: center;
   float: left;
   max-width: 40%;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .foto img {
@@ -36,10 +17,13 @@
   padding: 20px;
   box-sizing: border-box;
   max-width: 60%;
+  margin-left: 30%;
 }
 
 .hoofd-info h2 {
   color: #333;
+  padding-left: 20px;
+  margin-top: 20px;
 }
 
 .omschrijving p {
