@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
     </div>
     <div class="resenties">
       <?php 
-        //include("./.html") 
+        include("../Feedback/Feedback_formulier.html")
       ?>
     </div>
   </div>
