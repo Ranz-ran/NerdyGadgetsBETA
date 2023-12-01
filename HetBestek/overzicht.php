@@ -14,13 +14,8 @@
 </head>
 <body>
 
-  <div class="header">
-    <?php
-    //include("../header/header.php");
-    ?>
-  </div>
-
   <?php
+  include("../header/header.php");
   include("../Database/connection.php");
 
   //verkrijg alle producten van de database
