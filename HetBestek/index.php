@@ -66,7 +66,7 @@ include "../Info/info.html";
         </a>
     </div>
     <ul>
-        <li><a href="../index.php">Home</a></li>
+        <li><a href="../HetBestek/index.php">Home</a></li>
         <li><a href="#about">About</a></li>
     </ul>
     <p class="copyright">J-STAR ©2023</p>
