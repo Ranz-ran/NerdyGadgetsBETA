@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
+
 </head>
 <body>
 
