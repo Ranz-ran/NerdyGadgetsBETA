@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
 
   <div class="foto">
     <?php
-      print("<img src='../Img/product_images/".$gadget["image"]."' alt='Gadget Afbeelding'>");
+      print("<img src='../Img/product_images/".$gadget["image"].".jpg' alt='Gadget Afbeelding'>");
     ?>
   </div>
   <div class="info">
