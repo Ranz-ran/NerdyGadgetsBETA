@@ -61,4 +61,15 @@
   .info {
     max-width: 100%;
   }
+  .koop-nu {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #90c26d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
 }

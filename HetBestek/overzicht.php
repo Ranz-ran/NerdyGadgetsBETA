@@ -16,7 +16,7 @@
 
   <div class="header">
     <?php
-    //include("../header/header.php");
+    include("../header/header.php");
     ?>
   </div>
 

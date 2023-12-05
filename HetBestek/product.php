@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
 <body>
   <div class="header">
     <?php
-    //include("../header/header.php");
+    include("../header/header.php");
     ?>
   </div>
 
@@ -75,6 +75,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
         <input type="hidden" name="in_winkelwagen" value="1">
         <button type="submit" class="koop-nu"> In Winkelwagen </button>
       </form>
+    </div>
+    <div class="meer-producten">
+      <?php //include("uw bestand hier aub"); ?>
     </div>
     <div class="resenties">
       <?php 
