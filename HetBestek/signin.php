@@ -1,11 +1,11 @@
 <?php
-include("../header/header.php");
+include("../Database/connection.php");
 
 $registratiezin = registreren();
 
 function registreren() {
     session_start();
-    global $conn;
+    global $pdo;
 
     if (isset($_POST['registerSubmit'])) {
         $firstName = isset($_POST['firstName']) ? $_POST['firstName'] : "";
@@ -19,35 +19,38 @@ function registreren() {
             // hash het wachtwoord voor veiligheidsredenen
             $hashedPassword = password_hash($passwordRegister, PASSWORD_DEFAULT);
 
-            $query = "INSERT INTO User (first_name, surname, postal_code, email, password) VALUES (:firstName, :surname, :postalCode, :email, :password)";
-            $stmt = $conn->prepare($query);
+            $stmt = $pdo->prepare("INSERT INTO User (first_name, surname, postal_code, email, password) VALUES (:firstName, :surname, :postalCode, :email, :wachtwoord)");
             $stmt->bindParam(':firstName', $firstName);
             $stmt->bindParam(':surname', $surname);
             $stmt->bindParam(':postalCode', $postalCode);
             $stmt->bindParam(':email', $email);
-            $stmt->bindParam(':password', $hashedPassword);
+            $stmt->bindParam(':wachtwoord', $hashedPassword);
 
-            if ($stmt->execute()) {
+            if ($stmt->execute()) { 
+                $user_id = $pdo->lastInsertId();
+                // session klaar zetten en bijhouden met naam en user's id
+                $_SESSION['user_id'] = $user_id;
+                $_SESSION['naam'] = $firstName;
+                // deze return werkt als debug als het nodig is    
                 return "<p>Registratie gelukt</p>";
             } else {
                 return "<p>Er is iets mis gegaan</p>";
             }
         } else {
             if ($passwordRegister != $passwordConfirm) {
-                return "<p>Er is een typfout in uw wachtwoord</p>";
+                return "<p>De gegeven wachtwoordvelden komen niet overeen.</p>";
             } else {
                 return "<p>Voer alle velden in</p>";
             }
         }
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <title>Sign In</title>
 </head>
 <body>
 <form action="" method="post" name="Register_Form">
