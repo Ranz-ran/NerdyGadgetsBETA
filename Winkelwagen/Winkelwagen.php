@@ -11,21 +11,19 @@
         ;?>
 <link rel="stylesheet" href="Winkelwagen.css">
 </head>
-
-
 <body>
 <div class="wrap">
     <h2 class="projTitle">Welkom<span> bij </span> uw winkelwagen</h2>
     <div class="heading">
         <h2>Inhoud van de winkelwagen:</h2>
-        <a href="#" class="continue">Verder Winkelen</a>
+        <a href="../HetBestek/overzicht.php" class="continue">Verder Winkelen</a>
     </div>
 </div>
 <div class="containerr">
     <div class="cart">
         <div class="products">
             <div class="product">
-                <img src="laptop.jpg">
+                <img src="../Img/product_images/4GPNDDRJp92J.jpg">
                 <div class="product-info">
                     <h3 class="product-name">Laptop</h3>
                     <h4 class="product-price">1,000</h4>
@@ -37,7 +35,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="Iphone">
+                <img src="../Img/product_images/50GWOQE58kZq.jpg">
                 <div class="product-info">
                     <h3 class="product-name">Iphone</h3>
                     <h4 class="product-price">2,000</h4>
@@ -64,10 +62,5 @@
         </div>
     </div>
 </div>
-
 </body>
-
-
 </html>
-
-
