@@ -1,0 +1,40 @@
+.Table {
+    width: 400px;
+    margin: auto;
+}
+
+.Table td {
+    padding: 8px;
+    text-align: right;
+}
+
+.Table input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.formLink {
+    text-decoration: underline;
+}
+
+.zin {
+    text-align: center !important;
+}
+
+.Button,
+.cancel {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin-right: 10px;
+    width: 118px !important;
+}
