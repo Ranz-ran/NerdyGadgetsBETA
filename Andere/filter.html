@@ -12,29 +12,6 @@
 <button onclick="search()">Search</button>
 <div id="searchResults"></div>
 
-<script>
-    async function search() {
-        const searchTerm = document.getElementById('searchInput').value;
-
-        try {
-            const response = await fetch(`/search?term=${searchTerm}`);
-            const data = await response.json();
-            displayResults(data.results);
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    }
-
-    function displayResults(results) {
-        const searchResultsDiv = document.getElementById('searchResults');
-        searchResultsDiv.innerHTML = ''; // 清空先前的结果
-
-        results.forEach(result => {
-            const resultElement = document.createElement('p');
-            resultElement.textContent = result; // 根据返回的数据格式修改显示方式
-            searchResultsDiv.appendChild(resultElement);
-        });
-    }
 </script>
     </body>
     </html>
