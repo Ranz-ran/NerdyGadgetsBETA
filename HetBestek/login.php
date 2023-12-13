@@ -3,6 +3,9 @@ include("../Database/connection.php");
 
 $zin = inloggen();
 
+// Bereken de page waar de knop is gedrukt
+$_SESSION['last_page'] = $_SERVER['REQUEST_URI'];
+
 function inloggen() {
     session_start();
     global $pdo;
@@ -24,6 +27,10 @@ function inloggen() {
                 $_SESSION['naam'] = $resultaat['first_name'];
                 // deze return werkt als debug als het nodig is
                 return "<p>Login successful, welkom " . $_SESSION['naam'] . ".</p>";
+                // Redirect naar de page waar de knop is gedrukt
+                $redirect_url = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : 'login.php';
+                header("Location: " . $redirect_url);
+                exit();
             } else {
                 return "<p>Login mislukt, ongeldig email of wachtwoord</p>";
             }

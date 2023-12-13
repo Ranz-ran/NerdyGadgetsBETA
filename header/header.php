@@ -21,14 +21,14 @@
             <?php
                 if (isset($_SESSION['user_id'])) {
                     $user_id = $_SESSION['user_id'];
-                    //enter hier iets voor als de user is ingelogd
+                    $firstName = $_SESSION['naam'];
+                    print("<p>".$firstName."</p>");
+                    print("<a href='' class='Button'>Sign Out</a>");
                 } else {
-                print("<a href='login.php' class='Button'>Login</a>");    
-                print("<a href='signin.php' class='Button'>Sign In</a>");  
+                    print("<a href='login.php' class='Button'>Login</a>");    
+                    print("<a href='signin.php' class='Button'>Sign In</a>");  
                 }    
             ?>
-            <a href="login.php" class="Button">Login</a>
-            <a href="signin.php" class="Button">Sign In</a>
         </div>
     </header>
 </head>

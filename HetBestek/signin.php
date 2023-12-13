@@ -3,6 +3,9 @@ include("../Database/connection.php");
 
 $registratiezin = registreren();
 
+// Bereken de page waar de knop is gedrukt
+$_SESSION['last_page'] = $_SERVER['REQUEST_URI'];
+
 function registreren() {
     session_start();
     global $pdo;
@@ -33,6 +36,10 @@ function registreren() {
                 $_SESSION['naam'] = $firstName;
                 // deze return werkt als debug als het nodig is    
                 return "<p>Registratie gelukt</p>";
+                // Redirect naar de page waar de knop is gedrukt
+                $redirect_url = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : 'login.php';
+                header("Location: " . $redirect_url);
+                exit();
             } else {
                 return "<p>Er is iets mis gegaan</p>";
             }
