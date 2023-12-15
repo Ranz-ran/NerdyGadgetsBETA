@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>filter</title>
+    <link rel="stylesheet" href="../HetBestek/style.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../HetBestek/overzichtstyle.css">
 </head>
 <body>
 
@@ -12,20 +15,18 @@
     <div id="searchResults"></div>
 </form>
 
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Voornaam</th>
-        <th>Achternaam</th>
-    </tr>
     <?php
     $connection = mysqli_connect(
             "localhost", "root", "", "nerdy_gadgets_start", "3306");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && $query = trim($_POST['query'])) {
-        $sql = "select * from product where name like '%$query%'";
-    } else {
-        $sql = "select * from product";
-    }
+
+    //if ($_SERVER['REQUEST_METHOD'] === 'POST' && $query = trim($_POST['query'])) {
+    //    $sql = "select * from product where name like '%$query%'";
+    //    $sql = include "../HetBestek/overzicht.php";
+    //} else {
+    //    $sql = "select * from product";
+    //    $sql = include "../HetBestek/index.php";
+    //}
+
 
     $result = mysqli_query($connection, $sql);
 
