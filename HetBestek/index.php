@@ -19,7 +19,6 @@
     <?php
     include("../header/header.php");
     ?>
-
 </div>
 
 <body>

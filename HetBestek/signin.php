@@ -3,6 +3,9 @@ include("../Database/connection.php");
 
 $registratiezin = registreren();
 
+// Bereken de page waar de knop is gedrukt
+$_SESSION['last_page'] = $_SERVER['REQUEST_URI'];
+
 function registreren() {
     session_start();
     global $pdo;
@@ -33,6 +36,10 @@ function registreren() {
                 $_SESSION['naam'] = $firstName;
                 // deze return werkt als debug als het nodig is    
                 return "<p>Registratie gelukt</p>";
+                // Redirect naar de page waar de knop is gedrukt
+                $redirect_url = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : 'login.php';
+                header("Location: " . $redirect_url);
+                exit();
             } else {
                 return "<p>Er is iets mis gegaan</p>";
             }
@@ -49,47 +56,52 @@ function registreren() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logsignin.css">
     <meta charset="UTF-8">
     <title>Sign In</title>
 </head>
 <body>
 <form action="" method="post" name="Register_Form">
-    <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table">
+    <table width="400" cellpadding="5" cellspacing="1" class="Table">
         <?php if (isset($registratiezin)) { ?>
             <tr>
-                <td colspan="2" align="center" valign="top"><?php print $registratiezin; ?></td>
+                <td colspan="2" class="zin"><?php print $registratiezin; ?></td>
             </tr>
         <?php } ?>
         <tr>
-            <td colspan="2" align="left" valign="top"><h3>Register</h3></td>
+            <td><h3>Register</h3></td>
         </tr>
         <tr>
-            <td align="right" valign="top">Naam</td>
+            <td>Naam*</td>
             <td><input name="firstName" type="text" class="Input"></td>
         </tr>
         <tr>
-            <td align="right" valign="top">Achternaam</td>
+            <td>Achternaam*</td>
             <td><input name="surname" type="text" class="Input"></td>
         </tr>
         <tr>
-            <td align="right" valign="top">Postcode</td>
+            <td>Postcode*</td>
             <td><input name="postalCode" type="text" class="Input"></td>
         </tr>
         <tr>
-            <td align="right" valign="top">Email</td>
+            <td>Email*</td>
             <td><input name="email" type="email" class="Input"></td>
         </tr>
         <tr>
-            <td align="right">Wachtwoord</td>
+            <td>Wachtwoord*</td>
             <td><input name="regPassword" type="password" class="Input"></td>
         </tr>
         <tr>
-            <td align="right">Herhaal wachtwoord</td>
+            <td>Herhaal wachtwoord*</td>
             <td><input name="confPassword" type="password" class="Input"></td>
         </tr>
         <tr>
-            <td></td>
+            <td><a href="login.php" class="formLink">Heb je al een account?</a></td>
+        </tr>
+        <tr>
             <td><input name="registerSubmit" type="submit" value="Register" class="Button"></td>
+            <td><input name="cancel" type="button" value="Cancel" class="cancel"></td>
         </tr>
     </table>
 </form>

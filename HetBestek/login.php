@@ -3,6 +3,9 @@ include("../Database/connection.php");
 
 $zin = inloggen();
 
+// Bereken de page waar de knop is gedrukt
+$_SESSION['last_page'] = $_SERVER['REQUEST_URI'];
+
 function inloggen() {
     session_start();
     global $pdo;
@@ -24,6 +27,10 @@ function inloggen() {
                 $_SESSION['naam'] = $resultaat['first_name'];
                 // deze return werkt als debug als het nodig is
                 return "<p>Login successful, welkom " . $_SESSION['naam'] . ".</p>";
+                // Redirect naar de page waar de knop is gedrukt
+                $redirect_url = isset($_SESSION['last_page']) ? $_SESSION['last_page'] : 'login.php';
+                header("Location: " . $redirect_url);
+                exit();
             } else {
                 return "<p>Login mislukt, ongeldig email of wachtwoord</p>";
             }
@@ -36,31 +43,37 @@ function inloggen() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logsignin.css">
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
 <form action="" method="post" name="Login_Form">
-    <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table">
+    <table width="400" cellpadding="5" cellspacing="1" class="Table">
         <?php if (isset($zin)) { ?>
             <tr>
-                <td colspan="2" align="center" valign="top"><?php print $zin; ?></td>
+                <td colspan="2" class="zin"><?php print $zin; ?></td>
             </tr>
         <?php } ?>
         <tr>
-            <td colspan="2" align="left" valign="top"><h3>Login</h3></td>
+            <td><h3>Login</h3></td>
+            <td></td>
         </tr>
         <tr>
-            <td align="right" valign="top">Email</td>
+            <td>Email*</td>
             <td><input name="email" type="text" class="Input"></td>
         </tr>
         <tr>
-            <td align="right">Wachtwoord</td>
+            <td>Wachtwoord*</td>
             <td><input name="wachtwoord" type="password" class="Input"></td>
         </tr>
         <tr>
-            <td></td>
+            <td><a href="signin.php" class="formLink">Nog geen account?</a></td>
+        </tr>
+        <tr>
             <td><input name="loginSubmit" type="submit" value="Login" class="Button"></td>
+            <td><input name="cancel" type="button" value="Cancel" class="cancel"></td>
         </tr>
     </table>
 </form>
