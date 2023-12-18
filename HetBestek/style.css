@@ -1,26 +1,9 @@
-.header {
-    height: 200px;
-    width: 100%;
-    background-color: #696969;
-    text-align: center;
-    padding: 50px;
-}
-.logo {
-    height: 28%;
-    width: 28%;
-    display: grid;
-    align-items: center;
-    margin: 0 auto;
-    top:50%;
-    left:50%;
-    -ms-transform: translate(-2%, -20%);/*verplaatsen logo*/
-    transform: translate(-2%, -20%);/*verplaatsen logo*/
-}
-
-
 body {
     background-color: #C0C0C0 ;
     color: black;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 ion-icon {
@@ -39,7 +22,7 @@ footer > .social {
 }
 
 footer > .social > a {
-    font-size: 24px;
+    font-size: 12px;
     line-height: 40px;
     text-align: center;
 

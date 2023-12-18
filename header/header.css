@@ -5,9 +5,10 @@ header {
     text-align: center;
     padding: 50px;
 }
+
 .logo {
-    height: 88%;
-    width: 28%;
+    height: 88px;
+    width: 90px;
     display: grid;
     align-items: center;
     margin: 0 auto;

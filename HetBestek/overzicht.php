@@ -11,21 +11,16 @@
   <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
   <link rel="stylesheet" href="../header/header.css">
   <title>Nerdy Gadgets</title>
+
 </head>
 <body>
 
-  <div class="header">
-    <?php
-    include("../header/header.php");
-    ?>
-  </div>
-
   <?php
+  include("../header/header.php");
   include("../Database/connection.php");
 
   //verkrijg alle producten van de database
-  $stmt = $pdo->query("SELECT *
-                        FROM Product");
+  $stmt = $pdo->query("SELECT * FROM Product");
   $gadgets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   // zolang er producten zijn, print de product gegevens
@@ -34,7 +29,7 @@
       $gadgetId = $gadget['id'];
       print('<a class="gadget-box" href="product.php?gadget_id=' . $gadgetId . '">');
       print('<div class="gadget">');
-      print('<img src="../Img/product_images/'.$gadget["image"].'.jpg" alt="Gadget Afbeelding">');
+      print('<img src="../Img/product_images/'. $gadget["image"].'.jpg" alt="Gadget Afbeelding">');
       print('<div class="details">');
       print('<p>'.$gadget['name'].'</p>');
 

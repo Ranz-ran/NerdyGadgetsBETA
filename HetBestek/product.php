@@ -56,37 +56,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
     ?>
   </div>
 
-  <div class="product-container">
-    <div class="foto">
-      <?php
-        print("<img src='../Img/product_images/".$gadget["image"]."' alt='Gadget Afbeelding'>");
-      ?>
-    </div>
-    <div class="info">
-      <div class="hoofd-info">
-        <?php print("<h2>".$gadget["name"]."</h2>"); ?>
-      </div>
-      <div class="omschrijving">
-        <?php print("<p>".$gadget["description"]."</p>"); ?>
-      </div>
-      <div class="aankoop">
-        <?php print("<span class='prijs'> € ".$gadget["price"]." </span>"); ?>
-        <form method="post">
-          <input type="hidden" name="in_winkelwagen" value="1">
-          <button type="submit" class="koop-nu"> In Winkelwagen </button>
-        </form>
-      </div>
-    </div>
+  <div class="foto">
+    <?php
+      print("<img src='../Img/product_images/".$gadget["image"].".jpg' alt='Gadget Afbeelding'>");
+    ?>
   </div>
-  <div class="overige-info">
+  <div class="info">
+    <div class="hoofd-info">
+      <?php print("<h2>".$gadget["name"]."</h2>"); ?>
+    </div>
+    <div class="omschrijving">
+      <?php print("<p>".$gadget["description"]."</p>"); ?>
+    </div>
+    <div class="aankoop">
+      <?php print("<span class='prijs'> € ".$gadget["price"]." </span>"); ?>
+    
+      <form method="post">
+        <input type="hidden" name="in_winkelwagen" value="1">
+        <button type="submit" class="koop-nu"> In Winkelwagen </button>
+      </form>
+    </div>
     <div class="meer-producten">
       <?php //include("uw bestand hier aub"); ?>
     </div>
     <div class="resenties">
-      <?php include("../Feedback/Feedback_formulier.html") ?>
+      <?php 
+        include("../Feedback/Feedback_formulier.html")
+      ?>
     </div>
   </div>
-
 
   <footer>
     <div class="social">
