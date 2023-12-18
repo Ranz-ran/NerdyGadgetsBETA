@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" href="loginbuttons.css">
     <link rel="stylesheet" href="header.css">
     <header>
         <?php
@@ -18,22 +18,12 @@
         //include "../Andere/filter.php"
         ?>
         <div class="login-signin-button">
-            <?php
-                if (isset($_SESSION['user_id'])) {
-                    $user_id = $_SESSION['user_id'];
-                    $firstName = $_SESSION['naam'];
-                    print("<p>".$firstName."</p>");
-                    print("<a href='../HetBestek/logout.php' class='Button'>Sign Out</a>");
-                } else {
-                    print("<a href='../HetBestek/login.php' class='Button'>Login</a>");    
-                    print("<a href='../HetBestek/signin.php' class='Button'>Sign In</a>");  
-                }    
-            ?>
+        <?php
+        include "loginbuttons.php";
+        ?>
         </div>
     </header>
 </head>
-
-
 <body>
 </body>
 </html>

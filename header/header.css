@@ -17,15 +17,3 @@ header {
     -ms-transform: translate(-2%, -20%);/*verplaatsen logo*/
     transform: translate(-2%, -20%);/*verplaatsen logo*/
 }
-.login-signin-button {
-    margin-left: auto;
-    align-self: right;
-    padding: 50px;
-}
-.login-signin-button a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
