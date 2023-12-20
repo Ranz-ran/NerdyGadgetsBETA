@@ -2,8 +2,10 @@ header {
     height: 200px;
     width: 100%;
     background-color: #696969;
-    text-align: center;
-    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
@@ -16,4 +18,22 @@ header {
     left:50%;
     -ms-transform: translate(-2%, -20%);/*verplaatsen logo*/
     transform: translate(-2%, -20%);/*verplaatsen logo*/
+}
+
+.navigation-menu {
+    /* Adjust styles for your navigation menu */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    list-style: none; /* Remove default list styling */
+    display: flex;
+}
+
+.navigation-menu li {
+    margin-right: 15px; /* Adjust spacing between menu items */
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px; /* Adjust font size */
 }

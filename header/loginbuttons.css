@@ -1,10 +1,9 @@
 .login-signin-button {
-    margin-left: auto; 
-    display: flex; 
-    align-items: right;
+    display: flex;
+    align-items: center;
 }
 
-.login-signin-button a {
+.login-button {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;

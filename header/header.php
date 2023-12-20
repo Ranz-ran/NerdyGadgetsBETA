@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="loginbuttons.css">
     <link rel="stylesheet" href="header.css">
     <header>
         <?php
@@ -14,9 +13,7 @@
         <div class="logo">
             <img src="../Img/IMG_1915.png" alt="Nerdy Gadgets Logo" class="logo">
         </div>
-       <?php
-        //include "../Andere/filter.php"
-        ?>
+
         <div class="login-signin-button">
         <?php
         include "loginbuttons.php";
