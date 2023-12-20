@@ -31,7 +31,7 @@ CREATE TABLE `order` (
   PRIMARY KEY (`id`),
   KEY `fk_Order_User1_idx` (`user_id`),
   CONSTRAINT `fk_Order_User1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +86,7 @@ CREATE TABLE `product` (
   `category` varchar(45) NOT NULL,
   `image` varchar(120) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,13 +109,12 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(80) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(255) DEFAULT NULL,
   `first_name` varchar(30) NOT NULL,
   `surname` varchar(30) NOT NULL,
   `postal_code` varchar(6) NOT NULL,
-  `house_number` int(3) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,6 +123,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (91,'S1204958@student.windesheim.nl','$2y$10$dLEKynNKAghGkoilbcl3guIuQjuOmsoK66.Px8OwgnPP1II0pe2QC','Troy','Stilting','AB1234');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -136,4 +136,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-01 12:01:50
+-- Dump completed on 2023-12-15 10:03:37
