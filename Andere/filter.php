@@ -16,26 +16,28 @@
 </form>
 
     <?php
+
     $connection = mysqli_connect(
             "localhost", "root", "", "nerdy_gadgets_start", "3306");
+    $query = trim('');
 
-    //if ($_SERVER['REQUEST_METHOD'] === 'POST' && $query = trim($_POST['query'])) {
-    //    $sql = "select * from product where name like '%$query%'";
-    //    $sql = include "../HetBestek/overzicht.php";
-    //} else {
-    //    $sql = "select * from product";
-    //    $sql = include "../HetBestek/index.php";
-    //}
-
-
-    $result = mysqli_query($connection, $sql);
-
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr><td>{$row["id"]}</td><td>{$row["name"]}</td>\n";
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && $query = trim($_POST['query'])) {
+        $sql = "select * from product where name like '%$query%'";
+        //$sql = include "../HetBestek/overzicht.php";
+    } else {
+        $sql = header("../HetBestek/index.php");
+        //$sql = "select * from persoon";
     }
+
+
+    //$result = mysqli_query($connection, $sql);
+
+    //while ($row = mysqli_fetch_assoc($result)) {
+    //    echo $row['id'] . "";
+    //}
 
     mysqli_close($connection);
     ?>
-</table>
+
 </body>
 </html>

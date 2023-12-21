@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Algemeen/Hamburgers.css">
     <link rel="stylesheet" href="../header/header.css">
+
     <title>Nerdy Gadgets</title>
-
-    <!-- het logo -->
-
-
 </head>
+
 <div class="header">
     <?php
     include("../header/header.php");
@@ -22,7 +20,7 @@
 </div>
 
 <body>
-<!-- als je wil kan je hier bijvoorbeeld de slogan plakken als je wilt -->
+<!-- als je wil kan je hier bijvoorbeeld de slogan plakken -->
 <div class="slogan">
     <h3>The gadgets that improve your modern day life. </h3>
 </div>
