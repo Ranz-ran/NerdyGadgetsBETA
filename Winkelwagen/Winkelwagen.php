@@ -31,8 +31,8 @@
                     <h4 class="product-price">1,000</h4>
                     <p class="product-quantity">Aantal: <input type="number" placeholder="1">
                     <p class="product-remove">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
                         <span class="remove">Remove</span>
+                    </p>
                     </p>
                 </div>
             </div>
@@ -43,8 +43,8 @@
                     <h4 class="product-price">2,000</h4>
                     <p class="product-quantity">Aantal: <input type="number" placeholder="1">
                     <p class="product-remove">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
                         <span class="remove">Remove</span>
+                    </p>
                     </p>
                 </div>
             </div>
