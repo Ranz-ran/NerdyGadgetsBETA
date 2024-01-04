@@ -80,8 +80,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['in_winkelwagen'])) {
       <?php //include("uw bestand hier aub"); ?>
     </div>
     <div class="resenties">
-      <?php 
-        include("../Feedback/Feedback_formulier.html")
+      <?php
+      include("../Feedback/Feedback_formulier.php")
       ?>
     </div>
   </div>

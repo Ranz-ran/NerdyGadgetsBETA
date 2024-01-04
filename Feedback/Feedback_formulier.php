@@ -1,17 +1,7 @@
-<!DOCTYPE html>
 <?php
-// Verbind met de database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "nerdy_gadgets_start";
+global $pdo;
+include("../Database/connection.php");
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Controleer de verbinding
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
 
 // Verwerk het formulier als het is ingediend
 if (isset($_POST['submit'])) {
@@ -30,10 +20,10 @@ if (isset($_POST['submit'])) {
   $sql = "INSERT INTO rating (stars, review, username, date) VALUES ('$stars', '$review', '$username', NOW())";
 
   // Voer de query uit
-  if (mysqli_query($conn, $sql)) {
+  if (mysqli_query($pdo , $sql)) {
     echo "Bedankt voor uw feedback!";
   } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error: " . $sql . "<br>" . mysqli_error($pdo );
 }
 }
 ?>
@@ -70,10 +60,13 @@ if (isset($_POST['submit'])) {
 <h2>Recensies</h2>
 <?php
   // Maak de query om de gegevens te selecteren
-  $sql = "SELECT stars, review, username, date FROM rating ORDER BY date DESC";
+ // $sql = "SELECT stars, review, username, date FROM rating ORDER BY date DESC";
 
   // Voer de query uit
-  $result = mysqli_query($conn, $sql);
+ // $result = mysqli_query($pdo , $sql);
+
+$stmt = $pdo->query("SELECT stars, review, username, date FROM rating ORDER BY date DESC");
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   // Controleer of er resultaten zijn
   if (mysqli_num_rows($result) > 0) {
@@ -99,7 +92,7 @@ echo "<p>Er zijn nog geen recensies. Wees de eerste om uw mening te geven!</p>";
 }
 
 // Sluit de verbinding
-mysqli_close($conn);
+mysqli_close($pdo );
 ?>
 </body>
 </html>
