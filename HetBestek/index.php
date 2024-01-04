@@ -35,9 +35,6 @@
     </div>
 </div>
 
-<?php
-include "Carousel.html";
-?>
 
 
 <p>Wij de makers van Nerdy Gadgets willen ervoor zorgen dat het leven makkelijker wordt gemaakt voor onze klanten.

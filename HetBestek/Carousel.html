@@ -3,21 +3,46 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        * {box-sizing: border-box;}
+
+        *{box-sizing: border-box;}
         body {font-family: Verdana, sans-serif;}
         .mySlides {display: none;}
         img {vertical-align: middle;}
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 80%;
-            position: relative;
-            margin: auto;
+        {box-sizing: border-box;}
+        }
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
         }
 
         /* Caption text */
         .text {
-            color: #f2f2f2;
+            color: #000000;
             font-size: 12px;
             padding: 8px 12px;
             position: revert;
@@ -45,10 +70,10 @@
             display: inline-block;
             transition: background-color 1.6s ease;
         }
-
-        .active {
+        .active, .dot:hover {
             background-color: #717171;
         }
+
 
         /* Fading animation */
         .fade {
@@ -65,162 +90,125 @@
         @media only screen and (max-width: 300px) {
             .text {font-size: 11px}
         }
+
+
     </style>
 </head>
 <body>
 
-<h2>Automatic Slideshow</h2>
+
 
 <div class="slideshow-container">
 
     <div class="mySlides fade">
         <div class="numbertext">1 / 9</div>
-        <img src=../Img/product_images/qpZ03nvOYEDp.jpg style="width:25%">
-        <div class="text">De IdeaPad 3 is gemaakt voor de hedendaagse laptop gebruiker die voor het maximale gaat en
-            alles uit zijn of haar laptop haalt. Het is een moderne laptop die is voorzien van krachtige hardware.
-            Aan de binnenkant zit een krachtige Intel Core i3 - 1115G4 processor en zorgt in combinatie met het 8 GB
-            aan werkgeheugen dat alles soepel loopt en hierdoor heb je geen last van lange laadtijden. Dankzij de 256
-            GB SSD harde schijf is de laptop en alle programma’s binnen no-time opgestart en heb jij bovendien genoeg
-            ruimte om alle bestanden op te slaan. Het design van deze laptop is dun en heeft een moderne uitstraling.
-            Zo is hij voorzien van dunne randen en ook aan privacy is gedacht; dankzij de geïntrigeerde privacy shutter
-            kan de webcam gemakkelijk bedekt worden. Toe aan ontspanning? De Lenovo IdeaPad 3 zorgt voor tal van
-            entertainment mogelijkheden. Zo geniet je van Full-HD beeldkwaliteit op het 15.6 inch scherm. En op het
-            gebied van audio ben je dankzij de luidsprekers met Dolby Audio altijd verzekerd van goed geluid. Verder
-            is de IdeaPad 3 dankzij zijn lichte gewicht en lange batterijduur ideaal om mee te nemen voor onderweg.</div>
+        <img src=../Img/product_images/qpZ03nvOYEDp.jpg style=" width: 200px;
+  height: 300px;  object-fit: contain;    position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=28">A-Series USB-sticks zijn er voor snelle en betrouwbare gegevensoverdracht en ideale archivering van uw gegevens. De USB-aansluiting geeft altijd en overal veilig toegang tot uw gegevens. Dankzij het compacte formaat is deze USB-stick uitermate geschikt voor allerdaags gebruik en kan deze makkelijk vervoerd worden. Capaciteit: 32 GBMateriaal: kunststof/ metaalKleur: zwart/ zilverAansluiting: USB 2.0Leessnelheid: 13 - 17 MB/sSchrijfsnelheid: 4-6 MB/sAfmetingen: 56 x 11 x 11 mmGewicht : 15 gUitvoering: compatibel met alle gangbare besturingssystemen, veilige draaikapbehuizing, langdurige archiveringstijdIn blisterverpakking USB 2.0-geheugensticks uit de A-Series lijn zijn compatibel met zowel USB 3.0-poorten als achterwaarts compatibel met USB 1.1-poorten. Houd er rekening mee dat bij gebruik met een USB 1.1-poort de lees- en schrijfsnelheden aanzienlijk verschillen van de genoemde waarden.</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">2 / 9</div>
-        <img src=../Img/product_images/r52nzN091xM4.jpg style="width:25%">
-        <div class="text">De ASUS-AX3000 TUF Gaming Router ondersteunt WPA3, dat de nieuwste beveiligingsmethoden bevat
-            om alle gebruikers op het netwerk veilig te houden. Bovendien verdedigt AiProtection Pro, aangedreven door
-            Trend Micro™, je apparaten tegen aanvallen en dreigingen van buitenaf, inclusief apparaten waarop geen
-            antivirussoftware kan worden geïnstalleerd - zoals game consoles, smartphones en IoT-apparaten. Het beschikt
-            ook over automatische, regelmatig bijgewerkte beveiligingshandtekeningen om ervoor te zorgen dat je netwerk
-            beschermd blijft.</div>
+        <img src=../Img/product_images/BpADg3xx7yxX.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=23">" Met de Oyen Digital Dash Pro SSD met Heatsink voor de PS5 Console kun je op een eenvoudige manier het geheugen van je Sony PS5 upgraden. De Dash Pro maakt gebruik van het hoogste kwaliteit TLC NAND Flash-geheugen in combinatie met PCIe Gen 4-technologie voor superieure prestaties en een langere levensduur. Het koellichaam is van hoogwaardig CNC-aluminium en is in de fabriek geïnstalleerd met hoogwaardige thermische verbinding om de meest efficiënte warmteoverdracht te garanderen. – SSD-geheugenuitbreiding ontworpen voor de Sony Playstation 5 (PS5)-console– De lees-/schrijfsnelheid overtreft de prestatie-eisen van Sony– In de fabriek geïnstalleerd aluminium koellichaam voor effectieve warmteafvoer– TLC NAND Flash voor een langere levensduur en uitstekende prestaties– 3 jaar garantie SSD geheugenuitbreiding ontworpen voor de Sony Playstation 5 (PS5) console Lees-/schrijfsnelheid overtreft Sonys prestatie vereiste In de fabriek geïnstalleerd aluminium koellichaam voor effectieve warmteafvoer TLC NAND Flash voor langere levensduur en uitstekende prestaties Prestaties: tot 6850 MB/sec Geheugen: TLC NAND Flash Controller: Phison E18 with advanced flash and power management Operationele temperatuur: 0-70 graden Celsius Vereisten: Compatibel met Sony Playstation 5 (PS5). Ook compatibel met Windows, Mac, Linux 3 jaar garantie Inclusief: Schroevendraaier en handleiding "</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">3 / 9</div>
-        <img src=../Img/product_images/Q6D5o0vnzW4l.jpg style="width:25%">
-        <div class="text">A-Series USB-sticks zijn er voor snelle en betrouwbare gegevensoverdracht en ideale archivering
-            van uw gegevens. De USB-aansluiting geeft altijd en overal veilig toegang tot uw gegevens. Dankzij het
-            compacte formaat is deze USB-stick uitermate geschikt voor allerdaags gebruik en kan deze makkelijk vervoerd
-            worden.</div>
+        <img src=../Img/product_images/O6VYmP3yoylG.jpg style=" width: 200px; height: 300px; object-fit: contain;position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=11">Watt is er aan de hand met het opladen?Voor het geval je dacht dat we niet nog sneller konden, hebben we de Nord 2T de snelst opladende Nord-telefoon ooit gemaakt - 80W-SUPERVOOC. Deze techniek voorziet de 4500mAh-batterij in 15 minuten van een hele dag energie, 120% sneller dan de originele Nord.Begroet het lichtvacuümDe primaire camera van de Nord 2T beschikt over een grote, hoogwaardige Sony IMX766-sensor die 56% meer licht opzuigt voor scherpe, kleurrijke opnamen, zelfs bij weinig licht.Nog steeds vloeiend en prachtigMocht je het gemist hebben, de Nord 2T is uitgerust met hetzelfde strakke 6,43 inch 90 Hz AMOLED-display als de Nord 2. Het display biedt moeiteloos gestroomlijnde prestaties en heeft HDR10+-ondersteuning, zodat je nog kleurrijker kunt bingen met apps als Amazon Prime, Hulu, en YouTube. Wat zit er in de doos: OnePlus Nord 2T 5G 80W SUPERVOOC power adapter Type-C Cable (supports USB 2.0)</a>
+        </div>
     </div>
+
     <div class="mySlides fade">
         <div class="numbertext">4 / 9</div>
-        <img src=../Img/product_images/N0mKEJoGBVVm.jpg style="width:25%">
-        <div class="text">Met het TP-Link Deco X50 mesh wifi 6 3-Pack mesh systeem voorzie je een huis tot 100 vierkante
-            meter volledig van stabiele wifi 6. Deze nieuwe wifi versie zorgt voor een hogere snelheid en stabieler
-            draadloos internet. Zo sluit je moeiteloos meer dan 20 apparaten tegelijk aan op internet zonder dat je
-            verbinding instabiel wordt. Bovendien is de dekking beter, zodat de wifi punten verder van elkaar kunnen
-            staan. Dankzij de hoge wifi snelheid is deze router geschikt voor gemiddeld snelle internetverbindingen. Zo
-            stream je met meerdere gezinsleden in de hoogste kwaliteit. Het mesh netwerk zorgt ervoor dat je op meerdere
-            verdiepingen online gaat met dezelfde netwerknaam. Overschakelen is niet meer nodig.</div>
+        <img src=../Img/product_images/N0mKEJoGBVVm.jpg style=" width: 200px;  height: 300px;  object-fit: contain;position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=4">" Deze Macbook Air is geschikt voor alledaagse taken en is het dunste en lichtste notebook ooit gemaakt door Apple. Voorzien van een krachtige Apple M1 chip, True Tone Retina beeldscherm, Magic Keyboard, Touch ID vingerafdruksensor en een batterijduur tot wel 18 uur lang.Sneller en betere prestatiesDe Apple M1 processor is speciaal ontworpen voor de Macbook. De processor is energiezuiniger en veel krachtiger dan de Intel processoren die voorheen in de oude modellen zaten. Met deze nieuwe kracht draaien zware grafische programmas zoals Photoshop zeer soepel en kan je makkelijk meerdere taken tegelijkertijd aan. De toonaangevende efficiëntie van de M1-chip levert verbluffende prestaties zonder ventilator. Nu voert een aluminium warmteverspreider de warmte af die het systeem genereert, dus hoe intensief de taak ook is, dit model werkt volledig geruisloos.Mac OS Big SurDe Macbook Air is voorzien van het nieuwe besturingssystem Mac OS Big Sur. Het is ontwikkeld om het uiterste potentieel van de M1 processor te benutten. Ze werken samen om het hele systeem vlotter te maken. Dagelijkse taken, van bladeren door fotos tot bladeren door Safari gaat sneller. En jouw hardst werkende apps hebben allemaal toegang tot de stroom die ze nodig hebben. Samen met een prachtig nieuw ontwerp en de toonaangevende privacyfuncties bezit het over de beste beveiliging in zijn klasse.Ingebouwde beveiliging en privacyEen aanraking is voldoende om te vergrendelen of te ontgrendelen. Gebruik je vingerafdruk om een \u200b\u200bfilm te huren, een app te kopen of toegang te krijgen tot zaken als beveiligde documenten of systeeminstellingen zonder dat je jouw wachtwoord opnieuw hoeft in te voeren. En wanneer je online winkelt met Apple Pay, vult Touch ID jouw verzend- en factuurgegevens in zonder je kaartgegevens te delen.Verpakkingsinhoud: MacBook Air USB‑C‑lichtnetadapter van 30 W USB‑C-oplaadkabel (2 m) Goed om te weten- Thunderbolt aansluiting die DisplayPort functie ondersteunt.- Macbook Air komt met het Mac OS Big Sur besturingssyteem.- Dit model is voorzien van een QWERTY toetsenbord. "</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">5 / 9</div>
-        <img src=../Img/product_images/3jx92Qogw0Xn.jpg style="width:25%">
-        <div class="text">De OnePlus Nord 2T 128GB Grijs 5G is een krachtige, middenklasse smartphone die razendsnel is
-            bij gemiddeld gebruik. Zo schakel je soepel tussen apps als Instagram, Spotify en YouTube. Achterop zitten 3
-            camera's waarmee je redelijke foto's maakt. Met de groothoeklens passen ook grote gebouwen of de hele familie
-            volledig op de foto. Je bewaart je foto's samen met al je apps op het 128 GB opslaggeheugen. De 4.500 mAh
-            batterij gaat bij gemiddeld gebruik de hele dag mee. Je krijgt een 80 watt snellader meegeleverd. Hiermee
-            laad je de Nord 2T binnen een half uur volledig op. Je gaat dus nooit meer met een lege batterij de deur uit.
-            Op het 6,43 inch full hd scherm zie je veel details van je video's, films en series. Dit scherm ververst 90
-            keer per seconde, waardoor bewegingen tijdens het scrollen er vloeiend uitzien.</div>
+        <img src=../Img/product_images/3jx92Qogw0Xn.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=41">"Als je een fan bent van IT en elektronica, blijf up-to-date in de wereld van technologie en mis zelfs de kleinste details niet, koop Processor Intel i7-10700F i7-10700F 2,9 GHz 16 MB LGA1200tegen een onklopbare prijs. Soort: Processor Kanalen: 2 Kanalen Kernel: 8 Cache:16 MB 16 MBCompatibel:DDR4-SDRAM Intel Optane PC DDR4 RAM geheugenProcessor:Intel Intel Core i7 64 bits Intel Core i7 10700FSnelheid:2933 MHz 45,8 GB/s 2,9 GHz 4,8 GHzFrequentie: 2,9 GHz Energieverbruik: 65 W Socket: LGA1200Intel Core i7-10700F. Processorfamilie: Intel® 10de generatie Core™ i7, Processor socket: LGA 1200 (Socket H5), Component voor: PC. Geheugen kanaal: Dual-channel, Maximaal intern geheugen ondersteund door processor: 128 GB, Geheugentypen ondersteund door processor: DDR4-SDRAM. PCI Express configuraties: 1x16,2x8,1x8+2x4, Ondersteunde instructie sets: SSE4.1,SSE4.2,AVX 2.0, Schaalbaarheid: 1S. Intel® Turbo Boost Max Technology 3.0 frequency: 4,8 GHz, Intel® Turbo Boost Technology 2.0 frequency: 4,7 GHz. Type verpakking: RetaildoosProcessorfamilie: Intel® 10de generatie Core™ i7 Aantal processorkernen: 8 Processor socket: LGA 1200 (Socket H5) Component voor: PC Processor lithografie: 14 nm Box: Ja Inclusief koeler: Ja Processorfabrikant: Intel Basisfrequentie processor: 2,9 GHz Processormodel: i7-10700F Processor aantal threads: 16 Systeembus: 8 GT/s Processor operating modes: 64-bit Processor cache: 16 MB Processor cache type: Smart Cache Thermal Design Power (TDP): 65 W Maximale turbofrequentie van processor: 4,8 GHz Geheugenbandbreedte ondersteund door de processor ( max): 45,8 GB/s Codenaam processor: Comet Lake ARK ID processor: 199318 Geheugen kanaal: Dual-channel Maximaal intern geheugen ondersteund door processor: 128 GB Geheugentypen ondersteund door processor: DDR4-SDRAM Klokgeheugen-snelheden ondersteund door processor: 2933 MHz ECC: Nee Ingebouwde grafische adapter: Nee Aparte grafische adapter: Nee On-board graphics adapter model: Niet beschikbaar Discreet grafische adapter model: Niet beschikbaar Execute Disable Bit: Ja Idle States: Ja Thermal Monitoring Technologies: Ja Maximaal aantal PCI Express-lijnen: 16 PCI Express slots versie: 3.0 PCI Express configuraties: 1x16,2x8,1x8+2x4 Ondersteunde instructie sets: SSE4.1,SSE4.2,AVX 2.0 Schaalbaarheid: 1S CPU configuratie (max): 1 Ingebouwde opties beschikbaar: Nee Thermal solution specificatie: PCG 2015C PCI Express CEM revisie: 3.0 Marktsegment: Desktop Code geharmoniseerd systeem (HS): 8542310001 Export Control Classification Number (ECCN): 5A992C Commodity Classification Automated Tracking System (CCATS): G077159 Intel® Hyper Threading Technology (Intel® HT Technology): Ja Intel® Identity Protection Technology (Intel® IPT): Ja Intel® Turbo Boost Technology: 2.0 Intel® AES New Instructions (Intel® AES-NI): Ja Enhanced Intel SpeedStep Technology: Ja Intel® Trusted Execution Technology: Nee Intel® Thermal Velocity Boost: Nee Intel® Turbo Boost Max Technology 3.0 frequency: 4,8 GHz Intel® Turbo Boost Technology 2.0 frequency: 4,7 GHz Intel® Transactional Synchronization Extensions: Nee Intel® VT-x with Extended Page Tables (EPT): Ja Intel® Secure Key: Ja Intel® Stable Image Platform Program (SIPP): Nee Intel® OS Guard: Ja Intel® Software Guard Extensions (Intel® SGX): Ja Intel® 64: Ja Intel® Virtualization Technology (VT-x): Ja Intel® Virtualization Technology for Directed I/O (VT-d): Ja Intel® Turbo Boost Max Technology 3.0: Ja Intel® Optane™ Memory Ready: Ja Intel® Boot Guard: Ja Intel® vPro™ Platform Eligibility: Nee Tjunction: 100 °C Producttype: Processor Type verpakking: Retaildoos Verpakkingsgrootte processor: 37.5mm x 37.5mm Maximum intern geheugen: 128 GB Generatie: 10th Generation Doelgroep: Gaming, Content Creation Lanceringsdatum: Q220 Status: Launched Maximaal geheugen: 128 GB Bussnelheid: 8 GT/s "</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">6 / 9</div>
-        <img src=../Img/product_images/9XKL5oy8pyNY.jpg style="width:25%">
-        <div class="text">Bewerk foto's met de 15 inch Asus Vivobook 15 X515EA-EJ3289W. Met de 11e generatie Intel Core
-            i5 processor en het 8 gigabyte DDR4 werkgeheugen werk je makkelijk in Photoshop. Dankzij de 512 gigabyte SSD
-            heb je genoeg opslag voor je bestanden. Wil je meer opslag? Breid de laptop dan uit met een 2,5 inch HDD harde
-            schijf. Door het ontspiegelde beeldscherm heb je minder last van reflecties. Zo werk je makkelijk bij een raam
-            of in de tuin op een zonnige dag. Vul op het numerieke toetsenbord snel cijfers en formules in.</div>
+        <img src=../Img/product_images/9XKL5oy8pyNY.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=7">CTO variant met 67W snellader.Opnieuw ontworpen. Opnieuw uitgevonden.MacBook Air is helemaal opnieuw ontworpen rondom de krachtige nieuwe M2‑chip. Hij is uitzonderlijk snel en de batterij gaat maximaal 18 uur mee. En dat in een opmerkelijk dunne behuizing van 100% gerecycled aluminium. Alle onderdelen zijn zó efficiënt geplaatst dat het interne volume van de MacBook Air met maar liefst 20 procent is afgenomen ten opzichte van zijn voorganger. Dit resulteert in een strakke behuizing van slechts van 11,3 millimeter dik en een gewicht van 1,24 kg.Snel. Dun. Stil.De krachtige nieuwe M2-chip zorgt voor betere en snellere prestaties dan ooit tevoren. Zo is de M2-chip voor het toepassen van afbeeldingseffecten en -filters tot 20 procent en voor zwaardere taken zoals complexe videobewerking tot wel 38 procent sneller de M1 chip. Dankzij het zeer efficiënte en zuinige design van de M2-chip zitten al deze krachtige prestaties verpakt in een strakke behuizing zonder ventilatoren. Zo blijft de MacBook Air helemaal stil, hoe zwaar de taak ook is.Magsafe is terug.Terug van weggeweest is de Magsafe aansluiting, voor het opladen van je Macbook met een gerust hart. De Magsafe aansluiting is magnetisch, waardoor deze direct loslaat als eraan getrokken wordt. Zo wordt je MacBook niet van de tafel getrokken als er iemand door je snoer heenloopt. Ook heb je dankzij de Magsafe aansluiting de vrijheid om beide Thunderbolt 4 aansluitingen te gebruiken voor al je randapparatuur.Beter zien. Beter gezien worden.De MacBook Air heeft nu een 13.6 inch scherm. Dankzij de nóg smallere schermranden heb je nu meer werkruimte op je scherm en ontgaat je geen enkel detail. Het scherm loopt nu om de ingebouwde webcam heen, om ruimte te maken voor de menu-balk zonder dat je schermruimte inlevert. Met 500 nits is het scherm wel 25 procent helderder dan het scherm van de vorige MacBook Air, waardoor je ook in lichte ruimtes elk detail goed kan zien. Bovendien ondersteunt de MacBook Air tot wel 1 miljard kleuren en heeft het een resolutie van 2560 x 1664 pixels, wat zorgt voor levendige beelden en ongelooflijk veel detail. De 1080p FaceTime HD-camera heeft een dubbel zo hoge resolutie en twee keer betere prestaties bij weinig licht dan de voorganger. Drie microfoons die naar jou luisteren in plaats van naar wat er om je heen gebeurt zorgen voor een heldere geluidsopname. De vier speakers ondersteunen Dolby Atmos ruimtelijke audio voor geluid waar je helemaal in opgaat.MacOS Monterey Verbind, deel en creëer als nooit tevoren. Met de nieuwe updates voor Facetime zoals SharePlay en het nieuwe design van Safari is het macOS Monterey besturingssysteem een vernieuwende ervaring. Ontdek het gemak van universele bediening tussen je Macbook en Ipad en krijg meer voor elkaar. Het macOS Monterey besturingssysteem is ontworpen om lekker door te kunnen werken.</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">7 / 9</div>
-        <img src=../Img/product_images/q5Lr6wl7mQv7.jpg style="width:25%">
-        <div class="text">De AMD Ryzen 5 5600 is een middenklasse processor uit de Ryzen 5000 reeks. Deze cpu is geschikt
-            voor gaming en het bewerken van foto's. Met 6 kernen en 12 threads is overklokken en hyperthreading mogelijk.
-            Zo voer je meer taken tegelijkertijd uit, zonder dat een van je kernen trager werkt. De 5600 heeft een maximale
-            kloksnelheid van 4,4 GHz en maakt gebruik van de Zen 3 7 nanometer architectuur, wat hoge prestaties tegen een
-            laag stroomverbruik levert. Met 16 megabyte aan L3 cache en 3 megabyte aan L2 cache verwerkt deze processor
-            gegevens sneller dan andere CPU's. De geheugencontroller ondersteunt DDR4 RAM met een maximale geheugensnelheid
-            van 3200 MHz. Daarnaast ontvang je een AMD Wraith Stealth koeler bij deze processor, waarmee je de CPU goed
-            gekoeld houdt. Is je plan om Windows 11 te gebruiken als OS? Geen probleem, deze processor ondersteunt zowel
-            Windows 10 als 11, maar werkt ook met RHEL x86 en Ubuntu x86.</div>
+        <img src=../Img/product_images/q5Lr6wl7mQv7.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=2">Deze ASUS TUF F15 FX506HC-HN111W gaming laptop is perfect voor de instap gamer. Je speelt zo nu en dan wel eens Minecraft of FIFA 2021, maar alles op de allerhoogste grafische instellingen spelen, vind je niet zo belangrijk. Dankzij het IPS scherm heb je een brede kijkhoek en een realistische kleurweergave. Dankzij het verlichte toetsenbord is gamen in donkere ruimtes geen enkel probleem. Verder is het werkgeheugen van deze laptop uitbreidbaar. Hiermee kan je in de toekomst besluiten om je werkgeheugen te vergroten zodat je laptop nog meer taken tegelijkertijd aan kan.Je kunt de volgende games spelen op:High tot ultra-high grafische instellingenSport spellen; zoals Fifa 2023 of NBA 2k23.Indie spellen; zoals Valheim, Hades en Slay the Spire. Middelmatige grafische instellingenRTS spellen; zoals Starcraft 2 en de Total War series.Avontuur spellen; zoals Cyberpunk 2077, de Fallout series of de Assassins Creed games.Simulatie/strategie spellen; zoals Crusader Kings 3, Cities: Skylines en Sims 4.MOBA spellen; zoals League of Legends en DOTA.MMO spellen; zoals World of Warcraft en Elder Scrolls online.Racing spellen; zoals de Forza series en F1 2022. Lage grafische instellingenFirst person shooter spellen; zoals Destiny 2, Warzone, Fortnite en PUBG. De betrouwbare Intel Core i5 processor van deze laptop zorgt ervoor dat jij redelijk tot goede prestaties kunt verwachten tijdens gaming. Verder komt deze 11e generatie processor met verbeterde kunstmatige-intelligentie prestaties in vergelijking tot de voorgaande generatie. Dit betekent dus een langere accuduur en betere prestaties voor jouw laptop. Met de NVIDIA GeForce RTX 3050 beschik jij over 4 GB aan snel GDDR6 videogeheugen, ruim 3800 vernieuwde CUDA cores en de mogelijkheid om gebruik te maken van de 2e generatie Ray Tracing en DLSS functionaliteit. Game op de hoogste instellingen in een resoluties van tot wel 1440p (QHD) en geniet van de zorgeloze prestaties van je videokaart. Hierdoor zijn jouw game werelden meeslepend. Dankzij 8 GB werkgeheugen kan deze laptop meerdere taken gelijktijdig uitvoeren. Zo kun je bijvoorbeeld minder zware games spelen en deze gelijktijdig opnemen of streamen naar je vrienden. De 512 GB opslagcapaciteit biedt ruimte voor gemiddeld 10 games van 50 GB of 55 uur aan Full HD videomateriaal. De SSD zorgt ervoor dat de laptop binnen 15 seconden is opgestart. Bovendien werkt een SSD volledig stil en is het betrouwbaarder dan een traditionele harde schijf. Deze laptop beschikt ook over een super vlot 144Hz display wat bijzonder prettig is bij het spelen van spellen waar snelheid en reflex van belang zijn zoals bij shooters en racing games. Een 15.6 inch scherm geeft jou een standaard ervaring. Niet te groot, niet te klein. Het Full HD-scherm biedt een prettige beeldkwaliteit voor het spelen van je games.Goed om te weten:- Deze laptop is voorzien van Windows 11 Home.- De behuizing is gemaakt van aluminium.- Het werkgeheugen van deze laptop is uitbreidbaar.- Microsoft Office is niet inbegrepen bij de laptop.- Deze laptop heeft een kortere accuduur bij het spelen van games.- Deze laptop kan warm worden tijdens intensief gebruik. Gebruik een laptopstandaard om dit te verminderen.- De videokaart van deze laptop is geen Max-Q variant.- Deze laptop is voorzien van een QWERTY toetsenbord.</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">8 / 9</div>
-        <img src=../Img/product_images/oKVEj8kqR9NB.jpg style="width:25%">
-        <div class="text">Start je computer en al je applicaties razendsnel op met de Samsung 870 QVO 1TB. Deze 2,5 inch
-            SSD is geschikt voor laptops, desktops en NAS systemen met een 2,5 inch aansluiting. De QVO 870 heeft een
-            leessnelheid van 560 en een schrijfsnelheid van 530 megabyte per seconde. Dit is 10 megabyte per seconde
-            sneller dan zijn voorganger, de Samsung QVO 860. Installeer je besturingssysteem op de SSD, zodat je laptop
-            of desktop in enkele seconden opstart. Ook open je applicaties snel en zet je foto's, films en documenten
-            vlot over naar een andere schijf. De QVO heeft 1 gigabyte cache waarmee je veelgebruikte bestanden nog sneller
-            opent. Deze SSD is daarnaast veel betrouwbaarder en energiezuiniger dan een harde schijf.</div>
+        <img src=../Img/product_images/302wpprwjRMr.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=24">Een kleine upgrade, een groot verschil. Met deze nieuwe 2.5" SSD van Samsung geniet je van een stabiele snelheid en betrouwbaarheid. Geen draaiende schijven zoals bij een reguliere harde schijf en daarom minder gevoelig. 500 GB opslagMet deze 870 EVO van Samsung krijg je 500GB aan opslag. Het besturingssysteem, Apps, programma\s en bestanden vormen geen probleem. Heb je meer ruimte nodig? Deze Samsung 870 EVO komt ook in 1TB, 2TB en 4TB. Snelheid van de 870 EVOHet belangrijkste voordeel van een SSD is uiteraard de snelheid. De 870 EVO schrijft met maximaal 560 Mbps en leest maximaal 530 Mbps. Dankzij Intelligent Turbowrite van Samsung haalt de 870 EVO ook consistent hoge snelheden zodat je optimaal gebruikt maakt van de capaciteit. Mac-compatibelDeze Samsung 870 SSD is ook te gebruiken in oudere Apple Macbooks (de modellen voor de Retina schermen, met de CD-drive). Vanaf de Apple Macbook Retina zijn de Macbooks uitgerust van een gesoldeerde harde schijf en daarom niet uit te wisselen.Samsung Magician 6Samsung Magician-software is ontworpen om jouw SSD te beheren via een eenvoudige en intuïtieve gebruikersinterface. Krijg meldingen wanneer er nieuwe firmware op de markt wordt gebracht en installeer gemakkelijk updates voor betere prestaties, en meer stabiliteit en compatibiliteit. Beveilig jouw data door beveiligingsopties te selecteren. De 870 EVO ondersteunt AES 256-bit hardware-codering en is compatibel met TCG Opal en IEEE 1667.</a>
+        </div>
     </div>
     <div class="mySlides fade">
         <div class="numbertext">9 / 9</div>
-        <img src=../Img/product_images/YZB4GR8gqNy9.jpg style="width:25%">
-        <div class="text">Met een aanpasbare RGB-verlichting, speciale toetsen voor profielen en lichteffecten, en een
-            volledige n-key rollover combineert de SKILLER SGK4 de praktische functies van een mechanisch toetsenbord
-            met het unieke typegevoel van rubberdome. En dit alles voor een onverslaanbare prijs. Het stoere ontwerp met
-            polssteun is vooral bedoeld voor gamers en is bovendien uitgerust met eigenschappen als functietoetsen met
-            voorgeprogrammeerde multimedia-acties en een krachtige gamingsoftware.Elk aantal toetsen op elk moment. De
-            meeste verkrijgbare rubberdome toetsenborden zijn alleen uitgerust met 2-key rollover ondersteuning en kunnen
-            maximaal twee toetsaanslagen tegelijk herkennen. Door de n-key ondersteuning is de SKILLER SGK4 een van de
-            weinige verkrijgbare rubberdome toetsenborden waarbij elk aantal toetsen tegelijkertijd kan worden ingedrukt
-            en geregistreerd.RGB-achtergrondverlichting in zes zones. Dankzij de achtergrondverlichting in zes zones kan
-            de SKILLER SGK4 worden verlicht met talloze effecten in 16,8 miljoen kleuren. De effecten kunnen zonder de te
-            downloaden gamingsoftware worden ingesteld, maar om de effecten volledig aan te passen, moet wel de software
-            worden gebruikt.Flexibiliteit met speciale toetsen. Met de vier profieltoetsen aan de bovenkant van de
-            SKILLER SGK4 kunnen gameprofielen met aangepaste toetstoewijzingen of effecten worden gekozen. Ook
-            lichteffecten kunnen net zo snel worden gekozen door de vier verlichtingstoetsen te gebruiken.Praktische
-            extra’s. Praktische extra’s, zoals toetsen met anti-ghosting, de gamingmodus met gedeactiveerde Windows-toets
-            en talloze functietoetsen met voorgeprogrammeerde multimedia-acties, zorgen ervoor dat tijdens het gamen de
-            technologie niet in de weg staat van het plezier.Intuïtieve gamingsoftware. De gamingsoftware voor de SKILLER
-            SGK4 kan op elk gewenst moment van onze officiële website worden gedownload. Met deze software is de verlichting
-            volledig aan te passen en wordt het toewijzen van toetsen en het opnemen en bewerken van macro’s mogelijk.
-            Daarnaast kunnen de werking van de Windows-toets, de reactietijd van de toetsen en de polling rate via de
-            software worden aangepast.</div>
+        <img src=../Img/product_images/RXrWz9KqxGDR.jpg style=" width: 200px; height: 300px; object-fit: contain; position: relative; top: 50%; width: 100%;">
+        <div class="text">
+            <a href="http://localhost:63342/NerdyGadgetsBETA/HetBestek/product.php?gadget_id=48">Complete Ryzen 5 Budget 6-Core Game PC Setup met 24" Gaming Monitor, -Toetsenbord en -Muis - 500GB SSD - 16GB RAM - Win11 PRODeze starter 6-Core Ryzen 5 RGB Budget Game PC set wordt geleverd compleet met 24 inch gaming monitor, toetsenbord en muis en is bedoeld voor kinderen of volwassenen die graag wat oudere spellen spelen. Voor de allernieuwste spellen raden wij een systeem met een dedicated videokaart aan. Deze RGB Budget Game PC met aRGB LED verlichting en Dual-Channel RAM is uitgerust met de AMD Ryzen 5 6-Core (12-threads) processor van AMD met ingebouwde RX Vega 7 grafische chip. Windows is geïnstalleerd op de extra snelle 500GB SSD. Dit zorgt dat de PC snel opstart, supersnelle lees- en schrijfprestaties biedt (tot 4x sneller dan een normale hardeschijf). Het systeem is voorzien van 2 geheugenmodules (2x 8GB i.p.v. 1x 16GB). Daar ook de videochip gebruik maakt van dit geheugen is het geheugen heel belangrijk in dit systeem. 2x 8GB (Dual-channel) geeft een veel betere performance dan 1x 16GB. De AMD Ryzen 5 4600G 6-Core processor heeft 12 threads. Iedere core heeft een kloksnelheid van wel 3.7-4.2GHz.! Binnen dit prijssegment haalt u met dit systeem het onderste uit de kan!Let op! Dit is een budget systeem en is niet geschikt voor de allernieuwste games. Deze computer is perfect voor wat oudere spellen zoals CS:GO, PUBG, minecraft, league of legends (LoL), rocket league, farming simulator, Runescape en sims 4. Fortnite is goed speelbaar op 1080P low settings AVG 60FPS. Performance mode AVG 100+.Wordt geleverd inclusief:- 24" Gaming monitor (1ms reactietijd)- Sharkoon SGK4 RGB Gaming Toetsenbord- Sharkoon SGM2 RGB Gaming MuisWilt u aanpassingen en/of uitbreidingen op het systeem? U kunt de door uw gewenste wijzigingen selecteren onderaan bij de opties. Mogelijkheden hierin zijn o.a. een upgrade van de videokaart, geheugen- en opslagcapaciteit (ook SSD) en uitbreiding met een monitor, toetsenbord & muis. Als u een optie kiest, wordt de totaalprijs direct aangepast bovenin het scherm. Zo weet u precies wat u zult betalen. Gratis verzending!Levertijd 1 tot 5 werkdagen.Prijs is inclusief BTW.Specificaties Moederbord: A320 Chipset / AM4 Socket (mATX)Processor: AMD Ryzen 5 4600G- 6 cores - 12 threads - 3,7-4.2 GHzSSD: 500GBRAM: 16GB DDR4-2666 Mhz (2x 8GB)Videokaart: Radeon RX Vega 3 (onboard)Behuizing (BxHxL): 17.5cm x 38cm x 36cm (aRGB) Voeding: 400 WattVideo uitgangen: HDMI en VGAUSB-poorten: 2x USB2.0 aansluiting + 6x USB3.0 aansluitingRAM Geheugen uitbreidbaar tot maximaal 32GB (2 Geheugenbanken)2 Geheugenbanken in gebruik in deze setup.M.2 Aansluiting aanwezig + 4x SATA-600Geluid: Realtek ALC887LAN: Gigabit LANMet Windows 11 Pro installatie (inclusief licentie, dus géén verborgen kosten!)Systeem wordt geleverd inclusief stroomkabel.Garantie: 2 jaar</a>
+        </div>
     </div>
 </div>
 <br>
 
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
 <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
 </div>
 
 <script>
     let slideIndex = 0;
     showSlides();
 
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
     function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        setTimeout(showSlides, 5000); // Dit veranderd de duur dat de slide blijft hangen
     }
 </script>
 
