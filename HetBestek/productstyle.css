@@ -29,16 +29,6 @@
   flex-direction: column;
 }
 
-.hoofd-info h2 {
-  color: #333;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
-.omschrijving p {
-  color: #666;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
 .aankoop {
   padding: 20px;
   box-sizing: border-box;

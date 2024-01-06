@@ -14,9 +14,9 @@
   
   .gadget img {
     width: 100%;
-    height: 200px; /* Adjust this value according to your design */
-    object-fit: cover; /* Cover will zoom in to cover the entire container while maintaining aspect ratio */
-    object-position: center; /* Start from the center point */
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
   
